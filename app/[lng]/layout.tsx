@@ -1,8 +1,14 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { dir } from 'i18next';
+import { languages } from '../i18n/settings';
 
 const inter = Inter({ subsets: ['latin'] });
+
+export async function generateStaticParams() {
+  return languages.map(lng => ({ lng }));
+}
 
 export const metadata: Metadata = {
   title: 'Roberto Saliola | Web Developer',
@@ -11,11 +17,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { lng },
 }: Readonly<{
   children: React.ReactNode;
+  params: { lng: string };
 }>) {
+  console.log('lng', lng);
   return (
-    <html lang="en">
+    <html
+      lang={lng}
+      dir={dir(lng)}
+      className="dark scroll-smooth"
+    >
       <body className={inter.className}>{children}</body>
     </html>
   );
