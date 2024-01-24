@@ -22,14 +22,13 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { lng: string };
 }>) {
-  console.log('lng', lng);
   return (
     <html
       lang={lng}
       dir={dir(lng)}
       className="dark scroll-smooth"
     >
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} flex flex-col h-screen`}>{children}</body>
     </html>
   );
 }
