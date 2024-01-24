@@ -7,7 +7,7 @@ import { languages } from '../i18n/settings';
 const inter = Inter({ subsets: ['latin'] });
 
 export async function generateStaticParams() {
-  return languages.map(lng => ({ lng }));
+  return languages.map((lng) => ({ lng }));
 }
 
 export const metadata: Metadata = {

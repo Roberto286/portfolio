@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { useTranslation } from '../i18n';
+// import { useTranslation } from '../i18n';
+import { Footer } from './components/Footer/client';
 
 type PageProps = {
   params: {
@@ -8,11 +8,10 @@ type PageProps = {
 };
 
 export default async function Page({ params: { lng } }: PageProps) {
-  const { t } = await useTranslation(lng);
+  // const { t } = await useTranslation(lng);
   return (
     <>
-      <h1>{t('prova')}</h1>
-      <Link href={`/${lng === 'en' ? 'it' : 'en'}`}>{t('Cambia lingua')}</Link>
+      <Footer lng={lng} />
     </>
   );
 }
