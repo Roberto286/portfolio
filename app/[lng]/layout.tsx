@@ -28,7 +28,9 @@ export default function RootLayout({
       dir={dir(lng)}
       className="dark scroll-smooth"
     >
-      <body className={`${inter.className} flex flex-col h-screen`}>{children}</body>
+      <body className={`${inter.className} flex flex-col h-screen bg-background-light dark:bg-bg-dark`}>
+        {children}
+      </body>
     </html>
   );
 }

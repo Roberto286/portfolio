@@ -11,6 +11,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.15",
     "accept-language": "^3.0.18",
     "husky": "^8.0.3",
     "i18next": "^23.7.17",
