@@ -7,11 +7,11 @@ import Button from '../Button/Button';
 import { MoonStars, SunDim } from '@phosphor-icons/react';
 
 export interface HeaderProps {
-  language: string;
+  lng: string;
   className?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ language, className = '' }) => {
+const Header: React.FC<HeaderProps> = ({ lng, className = '' }) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ language, className = '' }) => {
             />
           )}
         </Button>
-        <NavigationMenu lng={language} />
+        <NavigationMenu lng={lng} />
         <SocialsGroup />
       </div>
     </nav>
