@@ -38,11 +38,13 @@ const socials = [
   },
 ].map(({ name, link, icon }) => (
   <Button
+    id={`${name}_button`}
     rounded
     key={name}
     className="w-[30px] h-[30px] bg-text-light dark:bg-text-dark p-1"
+    onClick={() => window.open(link, '_blank')}
   >
-    <a href={link}>{icon}</a>
+    {icon}
   </Button>
 ));
 

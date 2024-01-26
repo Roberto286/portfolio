@@ -28,7 +28,9 @@ export default function RootLayout({
       dir={dir(lng)}
       className="dark scroll-smooth"
     >
-      <body className={`${dmSans.className} flex flex-col h-screen bg-background-light dark:bg-bg-dark`}>
+      <body
+        className={`${dmSans.className} flex flex-col h-screen bg-background-light dark:bg-bg-dark transition-colors duration-300`}
+      >
         {children}
       </body>
     </html>
