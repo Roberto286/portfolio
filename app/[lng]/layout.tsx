@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { DM_Sans } from 'next/font/google';
 import './globals.css';
 import { dir } from 'i18next';
 import { languages } from '../i18n/settings';
 
-const inter = Inter({ subsets: ['latin'] });
+const dmSans = DM_Sans({ subsets: ['latin'] });
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -28,7 +28,7 @@ export default function RootLayout({
       dir={dir(lng)}
       className="dark scroll-smooth"
     >
-      <body className={`${inter.className} flex flex-col h-screen bg-background-light dark:bg-bg-dark`}>
+      <body className={`${dmSans.className} flex flex-col h-screen bg-background-light dark:bg-bg-dark`}>
         {children}
       </body>
     </html>

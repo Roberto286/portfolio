@@ -1,18 +1,30 @@
 import React from 'react';
 import Button from '../Button/Button';
-import { TwitterLogo } from '@phosphor-icons/react';
+import { TwitterLogo, GithubLogo, LinkedinLogo } from '@phosphor-icons/react';
 
 const socials = [
-  //   {
-  //     name: 'GitHub',
-  //     link: 'https://github.com',
-  //     icon: <GithubFilled className="w-full h-full text-text-light dark:text-text-dark text-3xl/[0px] social-icon" />,
-  //   },
-  //   {
-  //     name: 'LinkedIn',
-  //     link: 'https://linkedin.com',
-  //     icon: <LinkedinFilled className="w-full h-full text-text-light dark:text-text-dark text-3xl/[0px] social-icon" />,
-  //   },
+  {
+    name: 'GitHub',
+    link: 'https://github.com/Roberto286',
+    icon: (
+      <GithubLogo
+        size="100%"
+        weight="fill"
+        className=" text-bg-light dark:text-bg-dark"
+      />
+    ),
+  },
+  {
+    name: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/roberto-saliola-340077224/',
+    icon: (
+      <LinkedinLogo
+        size="100%"
+        weight="fill"
+        className=" text-bg-light dark:text-bg-dark"
+      />
+    ),
+  },
   {
     name: 'X',
     link: 'https://x.com',
@@ -35,7 +47,7 @@ const socials = [
 ));
 
 const SocialsGroup = () => {
-  return <div>{socials}</div>;
+  return <div className="flex gap-x-5 ml-10">{socials}</div>;
 };
 
 export default SocialsGroup;

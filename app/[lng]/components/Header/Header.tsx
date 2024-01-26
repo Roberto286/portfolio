@@ -11,7 +11,7 @@ export interface BoxProps {
 
 const Header: React.FC<BoxProps> = ({ lng, className }) => {
   return (
-    <nav className={`${className || ''} flex justify-center`}>
+    <nav className={`${className || ''} flex justify-center py-10`}>
       <div className="flex items-center w-9/12">
         <Logo />
         <NavigationMenu lng={lng} />
