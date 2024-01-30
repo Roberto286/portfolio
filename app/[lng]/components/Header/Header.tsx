@@ -26,32 +26,30 @@ const Header: React.FC<HeaderProps> = ({ lng, className = '' }) => {
   };
 
   return (
-    <nav className={`${className} flex justify-center py-10`}>
-      <div className="flex items-center w-9/12">
-        <Logo />
-        <Button
-          id="theme-toggle"
-          type="button"
-          className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
-          onClick={toggleDarkMode}
-        >
-          {isDarkMode ? (
-            <SunDim
-              size={32}
-              className="text-text-light dark:text-text-dark"
-              weight="duotone"
-            />
-          ) : (
-            <MoonStars
-              size={32}
-              className="text-text-dark"
-              weight="duotone"
-            />
-          )}
-        </Button>
-        <NavigationMenu lng={lng} />
-        <SocialsGroup />
-      </div>
+    <nav className={`${className} flex justify-center py-10 flex items-center w-9/12`}>
+      <Logo />
+      <Button
+        id="theme-toggle"
+        type="button"
+        className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+        onClick={toggleDarkMode}
+      >
+        {isDarkMode ? (
+          <SunDim
+            size={32}
+            className="text-text-light-header dark:text-text-dark-header"
+            weight="duotone"
+          />
+        ) : (
+          <MoonStars
+            size={32}
+            className="text-text-dark-header"
+            weight="duotone"
+          />
+        )}
+      </Button>
+      <NavigationMenu lng={lng} />
+      <SocialsGroup />
     </nav>
   );
 };

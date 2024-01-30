@@ -41,7 +41,7 @@ const socials = [
     id={`${name}_button`}
     rounded
     key={name}
-    className="w-[30px] h-[30px] bg-text-light dark:bg-text-dark p-1"
+    className="w-[30px] h-[30px] bg-text-light-header dark:bg-text-dark-header p-1"
     onClick={() => window.open(link, '_blank')}
   >
     {icon}

@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.fashion-text {
+  background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%), linear-gradient(0deg, #42446e, #42446e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gradient {
+  border: 9px solid transparent;
+}
+
+.border-gradient::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: -9px;
+  right: -9px;
+  bottom: -9px;
+  background: linear-gradient(to right, #e70faa, #00c0fd);
+  z-index: -1;
+  border-radius: 50%;
+}
