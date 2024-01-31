@@ -1,3 +1,3 @@
 {
-  "Ciao,<br/>Mi chiamo <span className='test'>Roberto Saliola</span><br/>E sono un web developer": "Ciao,<br/>Mi chiamo <span className='test'>Roberto Saliola</span><br/>E sono un web developer"
+  "greeting": "Ciao 👋,<br/>Mi chiamo <br/> <span className='test'>{{name}}</span><br/>E sono un web developer"
 }

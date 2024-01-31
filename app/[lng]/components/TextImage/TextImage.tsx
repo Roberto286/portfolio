@@ -29,22 +29,25 @@ const TextImage: React.FC<TextImageProps> = ({
 }) => {
   const { t } = useTranslation(lng, 'main');
   return (
-    <div className={`text-image flex mt-60 ${className} ${reversed ? 'flex-row-reverse' : ''}`}>
+    <div
+      className={`text-image flex ${className} ${reversed ? 'flex-row-reverse' : ''} max-md:flex-col-reverse max-md:gap-y-10`}
+    >
       <div className="text-container w-3/5 flex justify-start items-center text-6xl">
         <Trans t={t}>{text}</Trans>
         {hardcoded && (
-          <p className="dark:text-text-dark text-text-light	">
-            Ciao 👋,
-            <br />
-            Mi chiamo <br />
-            <span className="fashion-text">Roberto Saliola</span>
-            <br />E sono un web developer
+          <p className="dark:text-text-dark text-text-light max-md:text-5xl">
+            <Trans
+              t={t}
+              i18nKey="greeting"
+              values={{ name: 'Roberto Saliola' }}
+              components={{ span: <span className="fashion-text" />, br: <br /> }}
+            />
           </p>
         )}
       </div>
       <div className={`image-container flex justify-end flex-1`}>
         <div
-          className={`relative w-96 h-96 mx-auto ${roundedImage ? 'rounded-full' : ''} ${imageGradient && roundedImage ? 'border-gradient' : ''} `}
+          className={`relative w-80 h-80 mx-auto ${roundedImage ? 'rounded-full' : ''} ${imageGradient && roundedImage ? 'border-gradient' : ''} `}
         >
           <Image
             fill

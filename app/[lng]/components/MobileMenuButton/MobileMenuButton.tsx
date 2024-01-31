@@ -1,6 +1,6 @@
 const MobileMenuButton = () => (
-  <div className="mobile-menu block md:hidden ml-auto">
-    <button className="flex items-center px-3 py-2 border rounded border-[#02010a] text-[#02010a] hover:border-black hover:text-black dark:border-slate-200 dark:text-slate-200 dark:hover:text-white dark:hover:border-white">
+  <div className="mobile-menu ml-auto">
+    <button className="flex items-center px-3 py-2 border rounded border-text-light text-text-light hover:border-black hover:text-black dark:border-text-dark dark:text-text-dark dark:hover:text-white dark:hover:border-white">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

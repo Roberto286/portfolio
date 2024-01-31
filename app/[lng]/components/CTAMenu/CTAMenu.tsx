@@ -49,7 +49,7 @@ const socials = [
 ));
 
 const SocialsGroup = () => {
-  return <div className="flex gap-x-5 ml-10">{socials}</div>;
+  return <div className="flex gap-x-5 ml-8">{socials}</div>;
 };
 
 export default SocialsGroup;
