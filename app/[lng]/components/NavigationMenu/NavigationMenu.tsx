@@ -1,9 +1,6 @@
+import { NavigationMenuProps } from './NavigationMenu.props';
 import { useTranslation } from '@/app/i18n/client';
 import NavLink from '../NavLink/NavLink';
-
-export type NavigationMenuProps = {
-  lng: string;
-};
 
 const NavigationMenu: React.FC<NavigationMenuProps> = ({ lng }) => {
   const { t } = useTranslation(lng, 'header');

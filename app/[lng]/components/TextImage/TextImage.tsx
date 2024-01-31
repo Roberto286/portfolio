@@ -1,20 +1,9 @@
 'use client';
+import { TextImageProps } from './TextImage.props';
 import { useTranslation } from '@/app/i18n/client';
 import React from 'react';
 import { Trans } from 'react-i18next';
 import Image from 'next/image';
-
-export type TextImageProps = {
-  text: string;
-  imagePath: string;
-  className?: string;
-  reversed?: boolean;
-  lng: string;
-  hardcoded?: boolean;
-  roundedImage?: boolean;
-  imageAlt: string;
-  imageGradient?: boolean;
-};
 
 const TextImage: React.FC<TextImageProps> = ({
   text,

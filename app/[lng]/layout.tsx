@@ -3,6 +3,8 @@ import { DM_Sans } from 'next/font/google';
 import './globals.css';
 import { dir } from 'i18next';
 import { languages } from '../i18n/settings';
+import Header from './components/Header/Header';
+import { Footer } from './components/Footer/client';
 
 const dmSans = DM_Sans({ subsets: ['latin'] });
 
@@ -31,7 +33,9 @@ export default function RootLayout({
       <body
         className={`${dmSans.className} flex flex-col items-center h-screen bg-background-light dark:bg-bg-dark transition-colors duration-300`}
       >
-        {children}
+        <Header lng={lng} />
+        <main className="flex-grow w-9/12">{children}</main>
+        <Footer lng={lng} />
       </body>
     </html>
   );

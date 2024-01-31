@@ -1,10 +1,6 @@
 'use client';
+import { NavLinkProps } from './NavLink.props';
 import React from 'react';
-
-export type NavLinkProps = {
-  children: React.ReactNode;
-  href: string;
-};
 
 const NavLink: React.FC<NavLinkProps> = ({ children, href }) => {
   return (
