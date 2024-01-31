@@ -17,7 +17,7 @@ export default async function Page({ params: { lng } }: PageProps) {
       <Header lng={lng} />
       <main className="flex-grow w-9/12">
         <TextImage
-          imagePath={'/images/foto1.jpeg'}
+          imagePath={'/assets/images/foto1.jpeg'}
           className="mt-20 lg:mt-60"
           lng={lng}
           text={''}
