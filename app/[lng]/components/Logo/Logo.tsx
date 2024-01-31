@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import logoPath from '../../../../public/images/logo.svg';
 
 const Logo = () => (
   <div className="logo-container relative w-24 h-14">
     <a href="/">
       <Image
-        src={logoPath}
+        src="/assets/images/logo.svg"
         alt="Company Logo"
         fill
       />
