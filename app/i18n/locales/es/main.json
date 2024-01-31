@@ -1,0 +1,3 @@
+{
+  "greeting": "ES Ciao 👋,<br/>Mi chiamo <br/> <span className='test'>{{name}}</span><br/>E sono un web developer"
+}

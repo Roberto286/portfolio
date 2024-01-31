@@ -29,7 +29,7 @@ export default function RootLayout({
       className="dark scroll-smooth"
     >
       <body
-        className={`${dmSans.className} flex flex-col h-screen bg-background-light dark:bg-bg-dark transition-colors duration-300`}
+        className={`${dmSans.className} flex flex-col items-center h-screen bg-background-light dark:bg-bg-dark transition-colors duration-300`}
       >
         {children}
       </body>

@@ -12,7 +12,7 @@ const NavLink: React.FC<NavLinkProps> = ({ children, href }) => {
       <a
         className="block 
         py-2 pl-3 pr-4 
-        text-text-light dark:text-text-dark sm:text-xl
+        text-text-light-header dark:text-text-dark-header sm:text-lg font-medium	
         dark:hover:text-amber-700"
         href={href}
       >

@@ -22,10 +22,10 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ lng }) => {
   ));
   return (
     <div
-      className="menu hidden md:block md:w-auto flex-1"
+      className="menu md:w-auto flex-1"
       id="navbar"
     >
-      <ul className="flex md:flex-row justify-end gap-x-10">{navLinks}</ul>
+      <ul className="flex md:flex-row justify-end gap-x-5">{navLinks}</ul>
     </div>
   );
 };

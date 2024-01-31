@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logoPath from '../../../../public/logo.svg';
+import logoPath from '../../../../public/images/logo.svg';
 
 const Logo = () => (
   <div className="logo-container relative w-24 h-14">

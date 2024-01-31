@@ -5,6 +5,7 @@ import NavigationMenu from '../NavigationMenu/NavigationMenu';
 import SocialsGroup from '../CTAMenu/CTAMenu';
 import Button from '../Button/Button';
 import { MoonStars, SunDim } from '@phosphor-icons/react';
+import MobileMenuButton from '../MobileMenuButton/MobileMenuButton';
 
 export interface HeaderProps {
   lng: string;
@@ -26,8 +27,8 @@ const Header: React.FC<HeaderProps> = ({ lng, className = '' }) => {
   };
 
   return (
-    <nav className={`${className} flex justify-center py-10`}>
-      <div className="flex items-center w-9/12">
+    <header className="w-9/12">
+      <nav className={`${className} flex justify-center py-10 items-center justify-between max-lg:hidden`}>
         <Logo />
         <Button
           id="theme-toggle"
@@ -38,21 +39,24 @@ const Header: React.FC<HeaderProps> = ({ lng, className = '' }) => {
           {isDarkMode ? (
             <SunDim
               size={32}
-              className="text-text-light dark:text-text-dark"
+              className="text-text-light-header dark:text-text-dark-header"
               weight="duotone"
             />
           ) : (
             <MoonStars
               size={32}
-              className="text-text-dark"
+              className="text-text-dark-header"
               weight="duotone"
             />
           )}
         </Button>
         <NavigationMenu lng={lng} />
         <SocialsGroup />
-      </div>
-    </nav>
+      </nav>
+      <nav className={`${className} flex justify-center py-10 items-center justify-between lg:hidden`}>
+        <MobileMenuButton />
+      </nav>
+    </header>
   );
 };
 
