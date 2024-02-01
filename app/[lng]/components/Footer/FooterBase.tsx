@@ -1,12 +1,7 @@
+import { FooterBaseProps } from './FooterBase.props';
 import Link from 'next/link';
 import { Trans } from 'react-i18next/TransWithoutContext';
 import { languages } from '../../../i18n/settings';
-import { TFunction } from 'next-i18next';
-
-export type FooterBaseProps = {
-  t: TFunction;
-  lng: string;
-};
 
 export const FooterBase: React.FC<FooterBaseProps> = ({ t, lng }) => {
   return (

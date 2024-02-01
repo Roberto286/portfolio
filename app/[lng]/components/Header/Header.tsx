@@ -1,4 +1,5 @@
 'use client';
+import { HeaderProps } from './Header.props';
 import React, { useEffect, useState } from 'react';
 import Logo from '../Logo/Logo';
 import NavigationMenu from '../NavigationMenu/NavigationMenu';
@@ -6,11 +7,6 @@ import SocialsGroup from '../CTAMenu/CTAMenu';
 import Button from '../Button/Button';
 import { MoonStars, SunDim } from '@phosphor-icons/react';
 import MobileMenuButton from '../MobileMenuButton/MobileMenuButton';
-
-export interface HeaderProps {
-  lng: string;
-  className?: string;
-}
 
 const Header: React.FC<HeaderProps> = ({ lng, className = '' }) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
@@ -28,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ lng, className = '' }) => {
 
   return (
     <header className="w-9/12">
-      <nav className={`${className} flex justify-center py-10 items-center justify-between max-lg:hidden`}>
+      <nav className={`${className} flex py-10 items-center justify-between max-lg:hidden`}>
         <Logo />
         <Button
           id="theme-toggle"
@@ -53,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ lng, className = '' }) => {
         <NavigationMenu lng={lng} />
         <SocialsGroup />
       </nav>
-      <nav className={`${className} flex justify-center py-10 items-center justify-between lg:hidden`}>
+      <nav className={`${className} flex py-10 items-center justify-between lg:hidden`}>
         <MobileMenuButton />
       </nav>
     </header>
