@@ -1,4 +1,4 @@
-export type TextImageProps = {
+export type HeroProps = {
   text: string;
   imagePath: string;
   className?: string;

@@ -1,4 +1,4 @@
-import TextImage from './components/TextImage/TextImage';
+import Hero from './components/Hero/Hero';
 
 type PageProps = {
   params: {
@@ -10,7 +10,7 @@ export default async function Page({ params: { lng } }: PageProps) {
   return (
     <>
       {/*//TODO Header -> personalizzare logo dark/light e dato che lo spazio c'è fare un logo con il nome completo*/}
-      <TextImage
+      <Hero
         imagePath={'/assets/images/foto1.jpeg'}
         className="mt-20 lg:mt-60"
         lng={lng}
@@ -19,7 +19,7 @@ export default async function Page({ params: { lng } }: PageProps) {
         imageAlt={''}
         roundedImage
         imageGradient
-      ></TextImage>
+      ></Hero>
     </>
   );
 }

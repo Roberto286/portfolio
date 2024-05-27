@@ -1,11 +1,11 @@
 'use client';
-import { TextImageProps } from './TextImage.props';
+import { HeroProps } from './Hero.props';
 import { useTranslation } from '@/app/i18n/client';
 import React from 'react';
 import { Trans } from 'react-i18next';
 import Image from 'next/image';
 
-const TextImage: React.FC<TextImageProps> = ({
+const Hero: React.FC<HeroProps> = ({
   text,
   imagePath,
   className = '',
@@ -51,4 +51,4 @@ const TextImage: React.FC<TextImageProps> = ({
   );
 };
 
-export default TextImage;
+export default Hero;
