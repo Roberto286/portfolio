@@ -1,4 +1,4 @@
-import TextImage from './components/TextImage/TextImage';
+import TextImage from './components/TextImage/Hero';
 
 type PageProps = {
   params: {
