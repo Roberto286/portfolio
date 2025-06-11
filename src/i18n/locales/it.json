@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi Sono",
+    "experience": "Esperienza",
+    "projects": "Progetti",
+    "skills": "Competenze",
+    "blog": "Blog",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "greeting": "Ciao, sono",
+    "name": "Roberto Saliola",
+    "role": "Full Stack Web Developer",
+    "description": "Trasformo idee in soluzioni digitali innovative e scalabili con passione per il codice pulito e l'esperienza utente eccezionale",
+    "cta": "Scopri il mio lavoro",
+    "skills": {
+      "frontend": "Frontend Development",
+      "backend": "Backend Architecture",
+      "fullstack": "Full Stack Solutions",
+      "modern": "Tecnologie Moderne"
+    }
+  },
+  "about": {
+    "title": "Chi Sono",
+    "intro": "Da receptionist a sviluppatore: la mia trasformazione digitale",
+    "description": "La mia carriera ha preso una svolta decisiva durante il lockdown del 2020. Quello che inizialmente sembrava un periodo di pausa si è trasformato nella scoperta della mia vera passione: lo sviluppo software.",
+    "journey": {
+      "title": "Il Mio Percorso",
+      "content": "Ho iniziato come receptionist in hotel, ma la tecnologia mi ha sempre affascinato. Durante il lockdown ho deciso di dedicarmi completamente all'informatica, studiando intensivamente e costruendo progetti reali. Oggi sono un full stack developer con esperienza su progetti enterprise e applicazioni scalabili."
+    },
+    "passion": {
+      "title": "La Mia Passione",
+      "content": "Amo creare soluzioni eleganti a problemi complessi. Il mio approccio combina creatività tecnica con attenzione ai dettagli, sempre con l'obiettivo di costruire software che non solo funzioni perfettamente, ma che offra anche un'esperienza utente eccezionale."
+    },
+    "languages": "Lingue: Italiano (nativo), Inglese (fluente), Spagnolo (intermedio)",
+    "location": "Milano, Italia",
+    "email": "roberto.saliola96@gmail.com",
+    "website": "https://www.robertosaliola.com"
+  },
+  "experience": {
+    "title": "Esperienza Professionale",
+    "current": "Attuale",
+    "present": "Presente",
+    "positions": {
+      "analyst": "Custom Software Engineering Analyst"
+    }
+  },
+  "projects": {
+    "title": "I Miei Progetti",
+    "viewGithub": "Vedi su GitHub",
+    "viewLive": "Vedi Live",
+    "techStack": "Stack Tecnologico"
+  },
+  "skills": {
+    "title": "Competenze Tecniche",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "other": "Altro",
+    "level": "Livello"
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Leggi di più",
+    "readTime": "min di lettura",
+    "publishedOn": "Pubblicato il"
+  },
+  "contact": {
+    "title": "Contattami",
+    "description": "Hai un progetto in mente? Parliamone!",
+    "subtitle": "Sono sempre interessato a nuove opportunità e collaborazioni",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "send": "Invia Messaggio",
+    "sending": "Invio in corso...",
+    "success": "Messaggio inviato con successo!",
+    "error": "Errore nell'invio del messaggio.",
+    "info": {
+      "title": "Informazioni di Contatto",
+      "email": "Email",
+      "location": "Posizione",
+      "response": "Tempo di Risposta",
+      "responseTime": "Entro 24 ore"
+    }
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati.",
+    "quickLinks": "Link Rapidi",
+    "followMe": "Seguimi",
+    "builtWith": "Costruito con React e Tailwind CSS"
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "retry": "Riprova",
+    "close": "Chiudi",
+    "open": "Apri",
+    "more": "Di più",
+    "less": "Di meno"
+  }
+}

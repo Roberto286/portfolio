@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Roberto Saliola",
+    "role": "Full Stack Web Developer",
+    "description": "I transform ideas into innovative and scalable digital solutions with passion for clean code and exceptional user experience",
+    "cta": "Discover my work",
+    "skills": {
+      "frontend": "Frontend Development",
+      "backend": "Backend Architecture",
+      "fullstack": "Full Stack Solutions",
+      "modern": "Modern Technologies"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "intro": "From receptionist to developer: my digital transformation",
+    "description": "My career took a decisive turn during the 2020 lockdown. What initially seemed like a period of pause transformed into the discovery of my true passion: software development.",
+    "journey": {
+      "title": "My Journey",
+      "content": "I started as a hotel receptionist, but technology has always fascinated me. During lockdown I decided to dedicate myself completely to computer science, studying intensively and building real projects. Today I am a full stack developer with experience on enterprise projects and scalable applications."
+    },
+    "passion": {
+      "title": "My Passion",
+      "content": "I love creating elegant solutions to complex problems. My approach combines technical creativity with attention to detail, always with the goal of building software that not only works perfectly, but also offers an exceptional user experience."
+    },
+    "languages": "Languages: Italian (native), English (fluent), Spanish (intermediate)",
+    "location": "Milan, Italy",
+    "email": "roberto.saliola96@gmail.com",
+    "website": "https://www.robertosaliola.com"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "current": "Current",
+    "present": "Present"
+  },
+  "projects": {
+    "title": "My Projects",
+    "viewGithub": "View on GitHub",
+    "viewLive": "View Live",
+    "techStack": "Tech Stack"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "other": "Other",
+    "level": "Level"
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Read more",
+    "readTime": "min read",
+    "publishedOn": "Published on"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Have a project in mind? Let's talk!",
+    "subtitle": "I'm always interested in new opportunities and collaborations",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Error sending message.",
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "location": "Location",
+      "response": "Response Time",
+      "responseTime": "Within 24 hours"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "quickLinks": "Quick Links",
+    "followMe": "Follow Me",
+    "builtWith": "Built with React and Tailwind CSS"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "close": "Close",
+    "open": "Open",
+    "more": "More",
+    "less": "Less"
+  }
+}

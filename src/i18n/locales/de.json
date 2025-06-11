@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über Mich",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "skills": "Fähigkeiten",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Roberto Saliola",
+    "role": "Full Stack Web-Entwickler",
+    "description": "Ich verwandle Ideen in innovative und skalierbare digitale Lösungen mit Leidenschaft für sauberen Code und außergewöhnliche Benutzererfahrung",
+    "cta": "Entdecke meine Arbeit",
+    "skills": {
+      "frontend": "Frontend-Entwicklung",
+      "backend": "Backend-Architektur",
+      "fullstack": "Full Stack Lösungen",
+      "modern": "Moderne Technologien"
+    }
+  },
+  "about": {
+    "title": "Über Mich",
+    "intro": "Vom Rezeptionisten zum Entwickler: meine digitale Transformation",
+    "description": "Meine Laufbahn nahm während des Lockdowns 2020 eine entscheidende Wendung. Was zunächst wie eine Pause schien, verwandelte sich in die Entdeckung meiner wahren Leidenschaft: Softwareentwicklung.",
+    "journey": {
+      "title": "Mein Weg",
+      "content": "Ich begann als Hotelrezeptionist, aber Technologie hat mich schon immer fasziniert. Während des Lockdowns entschied ich mich, mich vollständig der Informatik zu widmen, intensiv zu studieren und echte Projekte zu bauen. Heute bin ich ein Full-Stack-Entwickler mit Erfahrung in Unternehmensprojekten und skalierbaren Anwendungen."
+    },
+    "passion": {
+      "title": "Meine Leidenschaft",
+      "content": "Ich liebe es, elegante Lösungen für komplexe Probleme zu schaffen. Mein Ansatz kombiniert technische Kreativität mit Liebe zum Detail, immer mit dem Ziel, Software zu bauen, die nicht nur perfekt funktioniert, sondern auch eine außergewöhnliche Benutzererfahrung bietet."
+    },
+    "languages": "Sprachen: Italienisch (Muttersprache), Englisch (fließend), Spanisch (mittleres Niveau)",
+    "location": "Mailand, Italien",
+    "email": "roberto.saliola96@gmail.com",
+    "website": "https://www.robertosaliola.com"
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "current": "Aktuell",
+    "present": "Gegenwart"
+  },
+  "projects": {
+    "title": "Meine Projekte",
+    "viewGithub": "Auf GitHub ansehen",
+    "viewLive": "Live ansehen",
+    "techStack": "Tech Stack"
+  },
+  "skills": {
+    "title": "Technische Fähigkeiten",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Datenbank",
+    "other": "Andere",
+    "level": "Niveau"
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Mehr lesen",
+    "readTime": "Min Lesezeit",
+    "publishedOn": "Veröffentlicht am"
+  },
+  "contact": {
+    "title": "Kontaktiere Mich",
+    "description": "Hast du ein Projekt im Kopf? Lass uns reden!",
+    "subtitle": "Ich bin immer interessiert an neuen Möglichkeiten und Kooperationen",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht Senden",
+    "sending": "Wird gesendet...",
+    "success": "Nachricht erfolgreich gesendet!",
+    "error": "Fehler beim Senden der Nachricht.",
+    "info": {
+      "title": "Kontaktinformationen",
+      "email": "E-Mail",
+      "location": "Standort",
+      "response": "Antwortzeit",
+      "responseTime": "Innerhalb von 24 Stunden"
+    }
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "quickLinks": "Schnelle Links",
+    "followMe": "Folge mir",
+    "builtWith": "Erstellt mit React und Tailwind CSS"
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "error": "Fehler",
+    "retry": "Wiederholen",
+    "close": "Schließen",
+    "open": "Öffnen",
+    "more": "Mehr",
+    "less": "Weniger"
+  }
+}

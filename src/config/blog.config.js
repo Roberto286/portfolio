@@ -1,0 +1,50 @@
+export const blogData = [
+  {
+    id: 1,
+    title: 'blog.articles.zeroApi.title',
+    description: 'blog.articles.zeroApi.description',
+    slug: 'zero-dependency-api-nodejs',
+    content: 'blog.articles.zeroApi.content',
+    tags: ['Node.js', 'API', 'Backend', 'JavaScript', 'Performance'],
+    publishedAt: '2024-01-15',
+    readTime: 8,
+    image:
+      'https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=800',
+    featured: true,
+    category: 'backend',
+  },
+  {
+    id: 2,
+    title: 'blog.articles.microservices.title',
+    description: 'blog.articles.microservices.description',
+    slug: 'microfrontend-microservices-experience',
+    content: 'blog.articles.microservices.content',
+    tags: [
+      'Microservices',
+      'React',
+      'Architecture',
+      'Enterprise',
+      'Scalability',
+    ],
+    publishedAt: '2024-01-10',
+    readTime: 12,
+    image:
+      'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800',
+    featured: true,
+    category: 'architecture',
+  },
+  {
+    id: 3,
+    title: 'blog.articles.journey.title',
+    description: 'blog.articles.journey.description',
+    slug: 'receptionist-to-developer-journey',
+    content: 'blog.articles.journey.content',
+    tags: ['Career', 'Personal', 'Learning', 'Motivation', 'Growth'],
+    publishedAt: '2024-01-05',
+    readTime: 6,
+    image:
+      'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+    featured: false,
+    category: 'personal',
+  },
+];

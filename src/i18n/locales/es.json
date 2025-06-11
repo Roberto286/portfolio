@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Roberto Saliola",
+    "role": "Desarrollador Web Full Stack",
+    "description": "Transformo ideas en soluciones digitales innovadoras y escalables con pasión por el código limpio y la experiencia de usuario excepcional",
+    "cta": "Descubre mi trabajo",
+    "skills": {
+      "frontend": "Desarrollo Frontend",
+      "backend": "Arquitectura Backend",
+      "fullstack": "Soluciones Full Stack",
+      "modern": "Tecnologías Modernas"
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "intro": "De recepcionista a desarrollador: mi transformación digital",
+    "description": "Mi carrera tomó un giro decisivo durante el confinamiento de 2020. Lo que inicialmente parecía un período de pausa se transformó en el descubrimiento de mi verdadera pasión: el desarrollo de software.",
+    "journey": {
+      "title": "Mi Camino",
+      "content": "Comencé como recepcionista de hotel, pero la tecnología siempre me ha fascinado. Durante el confinamiento decidí dedicarme completamente a la informática, estudiando intensivamente y construyendo proyectos reales. Hoy soy un desarrollador full stack con experiencia en proyectos empresariales y aplicaciones escalables."
+    },
+    "passion": {
+      "title": "Mi Pasión",
+      "content": "Me encanta crear soluciones elegantes a problemas complejos. Mi enfoque combina creatividad técnica con atención al detalle, siempre con el objetivo de construir software que no solo funcione perfectamente, sino que también ofrezca una experiencia de usuario excepcional."
+    },
+    "languages": "Idiomas: Italiano (nativo), Inglés (fluido), Español (intermedio)",
+    "location": "Milán, Italia",
+    "email": "roberto.saliola96@gmail.com",
+    "website": "https://www.robertosaliola.com"
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "current": "Actual",
+    "present": "Presente"
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "viewGithub": "Ver en GitHub",
+    "viewLive": "Ver en Vivo",
+    "techStack": "Stack Tecnológico"
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Base de Datos",
+    "other": "Otro",
+    "level": "Nivel"
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Leer más",
+    "readTime": "min de lectura",
+    "publishedOn": "Publicado el"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "description": "¿Tienes un proyecto en mente? ¡Hablemos!",
+    "subtitle": "Siempre estoy interesado en nuevas oportunidades y colaboraciones",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Error al enviar el mensaje.",
+    "info": {
+      "title": "Información de Contacto",
+      "email": "Email",
+      "location": "Ubicación",
+      "response": "Tiempo de Respuesta",
+      "responseTime": "Dentro de 24 horas"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "quickLinks": "Enlaces Rápidos",
+    "followMe": "Sígueme",
+    "builtWith": "Construido con React y Tailwind CSS"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "retry": "Reintentar",
+    "close": "Cerrar",
+    "open": "Abrir",
+    "more": "Más",
+    "less": "Menos"
+  }
+}
