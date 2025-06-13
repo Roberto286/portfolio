@@ -42,10 +42,14 @@ const Navigation = () => {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="font-bold text-xl text-primary-600 dark:text-primary-400 cursor-pointer"
+            className="flex items-center cursor-pointer"
             onClick={() => scrollToSection('#hero')}
           >
-            Roberto.dev
+            <img 
+              src="/logo.svg" 
+              alt="Roberto Saliola" 
+              className="w-10 h-10"
+            />
           </motion.div>
 
           {/* Desktop Navigation */}

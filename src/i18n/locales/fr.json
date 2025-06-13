@@ -14,6 +14,7 @@
     "role": "Développeur Web Full Stack",
     "description": "Je transforme les idées en solutions numériques innovantes et évolutives avec passion pour le code propre et l'expérience utilisateur exceptionnelle",
     "cta": "Découvrir mon travail",
+    "scrollIndicator": "Faites défiler pour explorer",
     "skills": {
       "frontend": "Développement Frontend",
       "backend": "Architecture Backend",
@@ -41,27 +42,94 @@
   "experience": {
     "title": "Expérience Professionnelle",
     "current": "Actuel",
-    "present": "Présent"
+    "present": "Présent",
+    "positions": {
+      "analyst": "Analyste en Ingénierie Logicielle Personnalisée",
+      "associate": "Associé en Développement d'Applications"
+    },
+    "descriptions": { 
+      "analyst": "Développement d'applications d'entreprise utilisant des technologies modernes comme NestJS et Angular. Responsable de l'architecture backend et de l'optimisation des performances.",
+      "associate": "Développement de microservices et microfrontends pour des applications évolutives. Implémentation d'architectures modernes et de meilleures pratiques pour le développement logiciel."
+    },
+    "locations": {
+      "rome": "Rome"
+    },
+    "periods": {
+      "current": "Mars 2023 - Présent",
+      "associate": "Septembre 2022 - Mars 2023"
+    },
+    "achievements": {
+      "analyst": {
+        "backend": "Développement d'APIs REST évolutives avec NestJS et MongoDB",
+        "frontend": "Création d'interfaces utilisateur modernes avec Angular et RxJS",
+        "performance": "Optimisation des performances d'application de 40%"
+      },
+      "associate": {
+        "microservices": "Implémentation d'architectures de microservices",
+        "performance": "Amélioration des performances de 35%",
+        "architecture": "Conception d'architectures microfrontend évolutives"
+      }
+    }
   },
   "projects": {
     "title": "Mes Projets",
     "viewGithub": "Voir sur GitHub",
     "viewLive": "Voir en Direct",
-    "techStack": "Stack Technique"
+    "techStack": "Stack Technique",
+    "items": {
+      "zeroApi": {
+        "title": "API Sans Dépendance",
+        "description": "API REST construite avec Node.js pur sans dépendances externes, démontrant la puissance du runtime natif et les meilleures pratiques pour des performances optimales."
+      },
+      "paladins": {
+        "title": "Jeu Paladins",
+        "description": "Jeu web interactif développé avec React et Express, avec logique de jeu complexe, système de score et interface utilisateur responsive."
+      },
+      "portfolio": {
+        "title": "Site Portfolio",
+        "description": "Site portfolio personnel construit avec des technologies modernes, optimisé pour les performances et le SEO, avec support multilingue et thème sombre."
+      }
+    }
   },
   "skills": {
     "title": "Compétences Techniques",
+    "subtitle": "Les technologies et outils que j'utilise pour créer des solutions innovantes",
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Base de Données",
     "other": "Autre",
-    "level": "Niveau"
+    "level": "Niveau",
+    "legend": {
+      "title": "Niveaux de Compétence",
+      "expert": "Expert",
+      "advanced": "Avancé",
+      "intermediate": "Intermédiaire",
+      "basic": "Base",
+      "beginner": "Débutant"
+    }
   },
   "blog": {
     "title": "Blog",
     "readMore": "Lire plus",
     "readTime": "min de lecture",
-    "publishedOn": "Publié le"
+    "publishedOn": "Publié le",
+    "articles": {
+      "zeroApi": {
+        "title": "Construire des APIs sans dépendances avec Node.js",
+        "description": "Comment créer des APIs performantes en utilisant uniquement le runtime natif de Node.js, sans frameworks externes.",
+        "content": "Dans cet article j'explore comment construire des APIs REST évolutives en utilisant uniquement Node.js natif..."
+      },
+      "microservices": {
+        "title": "Mon expérience avec les Microservices et Microfrontends",
+        "description": "Leçons apprises en implémentant des architectures distribuées en environnement d'entreprise.",
+        "content": "Pendant mon travail chez Accenture j'ai eu l'opportunité de travailler avec des architectures complexes..."
+      },
+      "journey": {
+        "title": "De Réceptionniste à Développeur : Mon Parcours",
+        "description": "L'histoire de ma transformation professionnelle pendant le confinement de 2020.",
+        "content": "Mon histoire commence dans un hôtel, mais le vrai tournant est arrivé pendant le confinement..."
+      }
+    }
   },
   "contact": {
     "title": "Me Contacter",

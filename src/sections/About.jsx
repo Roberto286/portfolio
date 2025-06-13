@@ -1,20 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import Card from '../components/Card';
-import Icon from '../components/Icon';
 
 const About = () => {
   const { t } = useTranslation();
-
-  const personalInfo = [
-    {
-      icon: 'mail',
-      label: t('about.email'),
-      value: 'roberto.saliola96@gmail.com',
-    },
-    { icon: 'external', label: 'Website', value: 'robertosaliola.com' },
-    { icon: 'github', label: 'Location', value: t('about.location') },
-  ];
 
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
@@ -98,30 +87,13 @@ const About = () => {
               </p>
             </Card>
 
-            {/* Personal Info */}
+            {/* Languages */}
             <Card className="text-left">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                Contact Information
-              </h3>
-              <div className="space-y-3">
-                {personalInfo.map((info, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <Icon
-                      name={info.icon}
-                      size={18}
-                      className="text-primary-600 dark:text-primary-400"
-                    />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      <strong>{info.label}:</strong> {info.value}
-                    </span>
-                  </div>
-                ))}
-                <div className="flex items-center space-x-3">
-                  <span className="text-lg">🌍</span>
-                  <span className="text-gray-700 dark:text-gray-300">
-                    <strong>Languages:</strong> {t('about.languages')}
-                  </span>
-                </div>
+              <div className="flex items-center space-x-3">
+                <span className="text-lg">🌍</span>
+                <span className="text-gray-700 dark:text-gray-300">
+                  {t('about.languages')}
+                </span>
               </div>
             </Card>
           </motion.div>

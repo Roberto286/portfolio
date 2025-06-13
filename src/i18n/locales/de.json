@@ -14,6 +14,7 @@
     "role": "Full Stack Web-Entwickler",
     "description": "Ich verwandle Ideen in innovative und skalierbare digitale Lösungen mit Leidenschaft für sauberen Code und außergewöhnliche Benutzererfahrung",
     "cta": "Entdecke meine Arbeit",
+    "scrollIndicator": "Scrollen zum Erkunden",
     "skills": {
       "frontend": "Frontend-Entwicklung",
       "backend": "Backend-Architektur",
@@ -41,27 +42,94 @@
   "experience": {
     "title": "Berufserfahrung",
     "current": "Aktuell",
-    "present": "Gegenwart"
+    "present": "Gegenwart",
+    "positions": {
+      "analyst": "Analyst für maßgeschneiderte Software-Entwicklung",
+      "associate": "Anwendungsentwicklungs-Mitarbeiter"
+    },
+    "descriptions": { 
+      "analyst": "Entwicklung von Unternehmensanwendungen mit modernen Technologien wie NestJS und Angular. Verantwortlich für Backend-Architektur und Performance-Optimierung.",
+      "associate": "Entwicklung von Microservices und Microfrontends für skalierbare Anwendungen. Implementierung moderner Architekturen und Best Practices für Softwareentwicklung."
+    },
+    "locations": {
+      "rome": "Rom"
+    },
+    "periods": {
+      "current": "März 2023 - Gegenwart",
+      "associate": "September 2022 - März 2023"
+    },
+    "achievements": {
+      "analyst": {
+        "backend": "Entwicklung skalierbarer REST-APIs mit NestJS und MongoDB",
+        "frontend": "Erstellung moderner Benutzeroberflächen mit Angular und RxJS",
+        "performance": "Anwendungsleistungsoptimierung um 40%"
+      },
+      "associate": {
+        "microservices": "Implementierung von Microservices-Architekturen",
+        "performance": "Leistungsverbesserung um 35%",
+        "architecture": "Design skalierbarer Microfrontend-Architekturen"
+      }
+    }
   },
   "projects": {
     "title": "Meine Projekte",
     "viewGithub": "Auf GitHub ansehen",
     "viewLive": "Live ansehen",
-    "techStack": "Tech Stack"
+    "techStack": "Tech Stack",
+    "items": {
+      "zeroApi": {
+        "title": "Null-Abhängigkeits-API",
+        "description": "REST-API gebaut mit reinem Node.js ohne externe Abhängigkeiten, demonstriert die Kraft der nativen Laufzeit und Best Practices für optimale Leistung."
+      },
+      "paladins": {
+        "title": "Paladins Spiel",
+        "description": "Interaktives Web-Spiel entwickelt mit React und Express, mit komplexer Spiellogik, Punktesystem und responsiver Benutzeroberfläche."
+      },
+      "portfolio": {
+        "title": "Portfolio-Website",
+        "description": "Persönliche Portfolio-Website gebaut mit modernen Technologien, optimiert für Leistung und SEO, mit mehrsprachiger Unterstützung und dunklem Theme."
+      }
+    }
   },
   "skills": {
     "title": "Technische Fähigkeiten",
+    "subtitle": "Die Technologien und Werkzeuge, die ich verwende, um innovative Lösungen zu schaffen",
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Datenbank",
     "other": "Andere",
-    "level": "Niveau"
+    "level": "Niveau",
+    "legend": {
+      "title": "Fähigkeitsniveaus",
+      "expert": "Experte",
+      "advanced": "Fortgeschritten",
+      "intermediate": "Mittelstufe",
+      "basic": "Grundlagen",
+      "beginner": "Anfänger"
+    }
   },
   "blog": {
     "title": "Blog",
     "readMore": "Mehr lesen",
     "readTime": "Min Lesezeit",
-    "publishedOn": "Veröffentlicht am"
+    "publishedOn": "Veröffentlicht am",
+    "articles": {
+      "zeroApi": {
+        "title": "Null-Abhängigkeits-APIs mit Node.js erstellen",
+        "description": "Wie man performante APIs nur mit der nativen Node.js-Laufzeit erstellt, ohne externe Frameworks.",
+        "content": "In diesem Artikel erkunde ich, wie man skalierbare REST-APIs nur mit nativem Node.js erstellt..."
+      },
+      "microservices": {
+        "title": "Meine Erfahrung mit Microservices und Microfrontends",
+        "description": "Gelernte Lektionen bei der Implementierung verteilter Architekturen in Unternehmensumgebungen.",
+        "content": "Während meiner Arbeit bei Accenture hatte ich die Gelegenheit, mit komplexen Architekturen zu arbeiten..."
+      },
+      "journey": {
+        "title": "Vom Rezeptionisten zum Entwickler: Mein Weg",
+        "description": "Die Geschichte meiner beruflichen Transformation während des Lockdowns 2020.",
+        "content": "Meine Geschichte beginnt in einem Hotel, aber der wahre Wendepunkt kam während des Lockdowns..."
+      }
+    }
   },
   "contact": {
     "title": "Kontaktiere Mich",

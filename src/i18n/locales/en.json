@@ -14,6 +14,7 @@
     "role": "Full Stack Web Developer",
     "description": "I transform ideas into innovative and scalable digital solutions with passion for clean code and exceptional user experience",
     "cta": "Discover my work",
+    "scrollIndicator": "Scroll to explore",
     "skills": {
       "frontend": "Frontend Development",
       "backend": "Backend Architecture",
@@ -41,27 +42,94 @@
   "experience": {
     "title": "Professional Experience",
     "current": "Current",
-    "present": "Present"
+    "present": "Present",
+    "positions": {
+      "analyst": "Custom Software Engineering Analyst",
+      "associate": "Application Development Associate"
+    },
+    "descriptions": { 
+      "analyst": "Development of enterprise applications using modern technologies like NestJS and Angular. Responsible for backend architecture and performance optimization.",
+      "associate": "Development of microservices and microfrontends for scalable applications. Implementation of modern architectures and best practices for software development."
+    },
+    "locations": {
+      "rome": "Rome"
+    },
+    "periods": {
+      "current": "March 2023 - Present",
+      "associate": "September 2022 - March 2023"
+    },
+    "achievements": {
+      "analyst": {
+        "backend": "Development of scalable REST APIs with NestJS and MongoDB",
+        "frontend": "Creation of modern user interfaces with Angular and RxJS",
+        "performance": "Application performance optimization by 40%"
+      },
+      "associate": {
+        "microservices": "Implementation of microservices architectures",
+        "performance": "Performance improvement by 35%",
+        "architecture": "Design of scalable microfrontend architectures"
+      }
+    }
   },
   "projects": {
     "title": "My Projects",
     "viewGithub": "View on GitHub",
     "viewLive": "View Live",
-    "techStack": "Tech Stack"
+    "techStack": "Tech Stack",
+    "items": {
+      "zeroApi": {
+        "title": "Zero Dependency API",
+        "description": "REST API built with pure Node.js without external dependencies, demonstrating the power of native runtime and best practices for optimal performance."
+      },
+      "paladins": {
+        "title": "Paladins Game",
+        "description": "Interactive web game developed with React and Express, featuring complex game logic, scoring system and responsive user interface."
+      },
+      "portfolio": {
+        "title": "Portfolio Website",
+        "description": "Personal portfolio website built with modern technologies, optimized for performance and SEO, with multilingual support and dark theme."
+      }
+    }
   },
   "skills": {
     "title": "Technical Skills",
+    "subtitle": "The technologies and tools I use to create innovative solutions",
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Database",
     "other": "Other",
-    "level": "Level"
+    "level": "Level",
+    "legend": {
+      "title": "Skill Levels",
+      "expert": "Expert",
+      "advanced": "Advanced",
+      "intermediate": "Intermediate",
+      "basic": "Basic",
+      "beginner": "Beginner"
+    }
   },
   "blog": {
     "title": "Blog",
     "readMore": "Read more",
     "readTime": "min read",
-    "publishedOn": "Published on"
+    "publishedOn": "Published on",
+    "articles": {
+      "zeroApi": {
+        "title": "Building Zero Dependency APIs with Node.js",
+        "description": "How to create performant APIs using only Node.js native runtime, without external frameworks.",
+        "content": "In this article I explore how to build scalable REST APIs using only native Node.js..."
+      },
+      "microservices": {
+        "title": "My experience with Microservices and Microfrontends",
+        "description": "Lessons learned implementing distributed architectures in enterprise environment.",
+        "content": "During my work at Accenture I had the opportunity to work with complex architectures..."
+      },
+      "journey": {
+        "title": "From Receptionist to Developer: My Journey",
+        "description": "The story of my professional transformation during the 2020 lockdown.",
+        "content": "My story begins in a hotel, but the real turning point came during lockdown..."
+      }
+    }
   },
   "contact": {
     "title": "Contact Me",

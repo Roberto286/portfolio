@@ -14,6 +14,7 @@
     "role": "Desarrollador Web Full Stack",
     "description": "Transformo ideas en soluciones digitales innovadoras y escalables con pasión por el código limpio y la experiencia de usuario excepcional",
     "cta": "Descubre mi trabajo",
+    "scrollIndicator": "Desplázate para explorar",
     "skills": {
       "frontend": "Desarrollo Frontend",
       "backend": "Arquitectura Backend",
@@ -41,27 +42,94 @@
   "experience": {
     "title": "Experiencia Profesional",
     "current": "Actual",
-    "present": "Presente"
+    "present": "Presente",
+    "positions": {
+      "analyst": "Analista de Ingeniería de Software Personalizado",
+      "associate": "Asociado de Desarrollo de Aplicaciones"
+    },
+    "descriptions": { 
+      "analyst": "Desarrollo de aplicaciones empresariales utilizando tecnologías modernas como NestJS y Angular. Responsable de la arquitectura backend y optimización de rendimiento.",
+      "associate": "Desarrollo de microservicios y microfrontends para aplicaciones escalables. Implementación de arquitecturas modernas y mejores prácticas para desarrollo de software."
+    },
+    "locations": {
+      "rome": "Roma"
+    },
+    "periods": {
+      "current": "Marzo 2023 - Presente",
+      "associate": "Septiembre 2022 - Marzo 2023"
+    },
+    "achievements": {
+      "analyst": {
+        "backend": "Desarrollo de APIs REST escalables con NestJS y MongoDB",
+        "frontend": "Creación de interfaces de usuario modernas con Angular y RxJS",
+        "performance": "Optimización del rendimiento de aplicaciones en un 40%"
+      },
+      "associate": {
+        "microservices": "Implementación de arquitecturas de microservicios",
+        "performance": "Mejora del rendimiento en un 35%",
+        "architecture": "Diseño de arquitecturas microfrontend escalables"
+      }
+    }
   },
   "projects": {
     "title": "Mis Proyectos",
     "viewGithub": "Ver en GitHub",
     "viewLive": "Ver en Vivo",
-    "techStack": "Stack Tecnológico"
+    "techStack": "Stack Tecnológico",
+    "items": {
+      "zeroApi": {
+        "title": "API Sin Dependencias",
+        "description": "API REST construida con Node.js puro sin dependencias externas, demostrando el poder del runtime nativo y las mejores prácticas para rendimiento óptimo."
+      },
+      "paladins": {
+        "title": "Juego Paladins",
+        "description": "Juego web interactivo desarrollado con React y Express, con lógica de juego compleja, sistema de puntuación e interfaz de usuario responsive."
+      },
+      "portfolio": {
+        "title": "Sitio Web Portfolio",
+        "description": "Sitio web portfolio personal construido con tecnologías modernas, optimizado para rendimiento y SEO, con soporte multiidioma y tema oscuro."
+      }
+    }
   },
   "skills": {
     "title": "Habilidades Técnicas",
+    "subtitle": "Las tecnologías y herramientas que uso para crear soluciones innovadoras",
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Base de Datos",
     "other": "Otro",
-    "level": "Nivel"
+    "level": "Nivel",
+    "legend": {
+      "title": "Niveles de Habilidad",
+      "expert": "Experto",
+      "advanced": "Avanzado",
+      "intermediate": "Intermedio",
+      "basic": "Básico",
+      "beginner": "Principiante"
+    }
   },
   "blog": {
     "title": "Blog",
     "readMore": "Leer más",
     "readTime": "min de lectura",
-    "publishedOn": "Publicado el"
+    "publishedOn": "Publicado el",
+    "articles": {
+      "zeroApi": {
+        "title": "Construir APIs sin dependencias con Node.js",
+        "description": "Cómo crear APIs performantes usando solo el runtime nativo de Node.js, sin frameworks externos.",
+        "content": "En este artículo exploro cómo construir APIs REST escalables usando solo Node.js nativo..."
+      },
+      "microservices": {
+        "title": "Mi experiencia con Microservicios y Microfrontends",
+        "description": "Lecciones aprendidas implementando arquitecturas distribuidas en entorno empresarial.",
+        "content": "Durante mi trabajo en Accenture tuve la oportunidad de trabajar con arquitecturas complejas..."
+      },
+      "journey": {
+        "title": "De Recepcionista a Desarrollador: Mi Camino",
+        "description": "La historia de mi transformación profesional durante el confinamiento de 2020.",
+        "content": "Mi historia comienza en un hotel, pero el verdadero punto de inflexión llegó durante el confinamiento..."
+      }
+    }
   },
   "contact": {
     "title": "Contáctame",
