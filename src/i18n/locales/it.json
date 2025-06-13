@@ -44,6 +44,10 @@
     "present": "Presente",
     "positions": {
       "analyst": "Custom Software Engineering Analyst"
+    },
+    "descriptions": { "analyst": "blablabla" },
+    "locations": {
+      "rome": "Roma"
     }
   },
   "projects": {

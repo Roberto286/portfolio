@@ -56,13 +56,12 @@ const Experience = () => {
                         {experience.company}
                       </p>
                       <p className="text-sm text-gray-500 dark:text-gray-400">
-                        {experience.location}
+                        {t(experience.location)}
                       </p>
                     </div>
 
                     <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-                      {experience.description[i18n.language] ||
-                        experience.description.en}
+                      {t(experience.description)}
                     </p>
 
                     <div className="flex flex-wrap gap-2">

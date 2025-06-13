@@ -3,7 +3,7 @@ export const experienceData = [
     id: 1,
     position: 'experience.positions.analyst',
     company: 'Accenture',
-    location: 'experience.locations.milan',
+    location: 'experience.locations.rome',
     period: 'experience.periods.current',
     technologies: [
       'NestJS',
@@ -24,7 +24,7 @@ export const experienceData = [
     id: 2,
     position: 'experience.positions.associate',
     company: 'Accenture',
-    location: 'experience.locations.milan',
+    location: 'experience.locations.rome',
     period: 'experience.periods.associate',
     technologies: [
       'React',
