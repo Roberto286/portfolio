@@ -132,7 +132,7 @@ const Contact = () => {
                         {t('contact.info.location')}
                       </p>
                       <p className="text-lg font-semibold text-gray-900 dark:text-white">
-                        Milano, Italia
+                        Roma, Italia
                       </p>
                     </div>
                   </div>

@@ -66,27 +66,19 @@ const Skills = () => {
   const skillCategories = [
     { 
       key: 'frontend', 
-      skills: skillsData.frontend, 
-      icon: '⚛️',
-      gradient: 'from-blue-500 to-purple-500'
+      skills: skillsData.frontend
     },
     { 
       key: 'backend', 
-      skills: skillsData.backend, 
-      icon: '🔧',
-      gradient: 'from-green-500 to-teal-500'
+      skills: skillsData.backend
     },
     { 
       key: 'database', 
-      skills: skillsData.database, 
-      icon: '🗄️',
-      gradient: 'from-orange-500 to-red-500'
+      skills: skillsData.database
     },
     { 
       key: 'other', 
-      skills: skillsData.other, 
-      icon: '🛠️',
-      gradient: 'from-purple-500 to-pink-500'
+      skills: skillsData.other
     },
   ];
 
@@ -118,10 +110,7 @@ const Skills = () => {
               transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
             >
               <Card className="h-full">
-                <div className="flex items-center mb-6">
-                  <div className={`w-12 h-12 bg-gradient-to-r ${category.gradient} rounded-xl flex items-center justify-center text-white text-xl mr-4 shadow-lg`}>
-                    {category.icon}
-                  </div>
+                <div className="mb-6">
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                     {t(`skills.${category.key}`)}
                   </h3>
@@ -140,48 +129,6 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Skills Legend */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-12 text-center"
-        >
-          <Card className="inline-block">
-            <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-              {t('skills.legend.title')}
-            </h4>
-            <div className="flex flex-wrap justify-center gap-6 text-sm">
-              {[
-                { stars: 5, label: t('skills.legend.expert'), level: '90-100%' },
-                { stars: 4, label: t('skills.legend.advanced'), level: '80-89%' },
-                { stars: 3, label: t('skills.legend.intermediate'), level: '70-79%' },
-                { stars: 2, label: t('skills.legend.basic'), level: '60-69%' },
-                { stars: 1, label: t('skills.legend.beginner'), level: '< 60%' },
-              ].map((item) => (
-                <div key={item.stars} className="flex items-center space-x-2">
-                  <div className="flex space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <div
-                        key={i}
-                        className={`w-2 h-2 rounded-full ${
-                          i < item.stars
-                            ? 'bg-gradient-to-r from-primary-500 to-secondary-500'
-                            : 'bg-gray-200 dark:bg-gray-600'
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <span className="text-gray-600 dark:text-gray-400">
-                    {item.label}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </Card>
-        </motion.div>
       </div>
     </section>
   );

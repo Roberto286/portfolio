@@ -17,7 +17,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 dark:bg-black text-white py-12">
+    <footer className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white py-12 border-t border-gray-200 dark:border-gray-700">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
@@ -26,11 +26,11 @@ const Footer = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-2xl font-bold text-primary-400 mb-4"
+              className="text-2xl font-bold text-primary-600 dark:text-primary-400 mb-4"
             >
               Roberto.dev
             </motion.h3>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
               Full Stack Web Developer specializzato in soluzioni innovative e
               scalabili.
             </p>
@@ -63,7 +63,7 @@ const Footer = () => {
                           .querySelector(`#${section}`)
                           ?.scrollIntoView({ behavior: 'smooth' })
                       }
-                      className="text-gray-400 hover:text-primary-400 transition-colors capitalize"
+                      className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors capitalize"
                     >
                       {t(`nav.${section}`)}
                     </button>
@@ -96,7 +96,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 + index * 0.1 }}
                   whileHover={{ scale: 1.1, y: -2 }}
-                  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-primary-400 hover:bg-gray-700 transition-all"
+                  className="w-10 h-10 bg-gray-200 dark:bg-gray-800 rounded-full flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all"
                   aria-label={link.name}
                 >
                   <Icon name={link.icon} size={20} />
@@ -112,9 +112,9 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="border-t border-gray-800 pt-8 text-center"
+          className="border-t border-gray-200 dark:border-gray-700 pt-8 text-center"
         >
-          <p className="text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400">
             © {currentYear} Roberto Saliola. {t('footer.rights')}
           </p>
         </motion.div>

@@ -24,13 +24,27 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-secondary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-16 relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-secondary-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-20 pb-16 relative overflow-hidden"
     >
       {/* Particle Background */}
       <ParticleBackground />
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden" style={{ zIndex: 2 }}>
+        {/* Slow moving green dot */}
+        <motion.div
+          animate={{
+            x: ['-10%', '110%'],
+            y: ['20%', '80%', '20%'],
+          }}
+          transition={{
+            duration: 25,
+            repeat: Infinity,
+            ease: "linear"
+          }}
+          className="absolute w-32 h-32 bg-primary-400 dark:bg-primary-600 rounded-full mix-blend-multiply filter blur-xl opacity-30"
+        />
+        
         <motion.div
           animate={{
             x: [0, 100, 0],
@@ -208,17 +222,17 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.6, duration: 1 }}
-            className="relative"
+            className="relative mb-8"
           >
             <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
               className="w-6 h-10 border-2 border-primary-600 dark:border-primary-400 rounded-full mx-auto relative"
             >
               <motion.div
-                animate={{ y: [0, 16, 0], opacity: [1, 0, 1] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                className="w-1 h-3 bg-primary-600 dark:bg-primary-400 rounded-full mx-auto mt-2"
+                animate={{ y: [2, 12, 2], opacity: [1, 0.3, 1] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                className="w-1 h-2 bg-primary-600 dark:bg-primary-400 rounded-full mx-auto mt-2"
               />
             </motion.div>
             <motion.p

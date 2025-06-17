@@ -44,7 +44,7 @@ const Blog = () => {
                 <div className="relative mb-6 rounded-lg overflow-hidden">
                   <img
                     src={article.image}
-                    alt={article.title[i18n.language] || article.title.en}
+                    alt={t(article.title)}
                     className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
                   />
                   <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -65,12 +65,11 @@ const Blog = () => {
                   </div>
 
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                    {article.title[i18n.language] || article.title.en}
+                    {t(article.title)}
                   </h3>
 
                   <p className="text-gray-600 dark:text-gray-400 mb-4 flex-1 leading-relaxed">
-                    {article.description[i18n.language] ||
-                      article.description.en}
+                    {t(article.description)}
                   </p>
 
                   <div className="flex items-center justify-between">

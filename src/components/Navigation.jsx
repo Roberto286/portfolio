@@ -84,10 +84,8 @@ const Navigation = () => {
             <ThemeToggle />
           </div>
 
-          {/* Mobile Controls */}
-          <div className="md:hidden flex items-center space-x-2">
-            <LanguageSelector />
-            <ThemeToggle />
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
@@ -122,6 +120,12 @@ const Navigation = () => {
                     {t(`nav.${item.key}`)}
                   </motion.button>
                 ))}
+                
+                {/* Mobile Controls at bottom */}
+                <div className="flex justify-between items-center px-4 py-3 mt-4 border-t border-gray-200 dark:border-gray-700">
+                  <LanguageSelector />
+                  <ThemeToggle />
+                </div>
               </div>
             </motion.div>
           )}

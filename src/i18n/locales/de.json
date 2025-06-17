@@ -35,7 +35,7 @@
       "content": "Ich liebe es, elegante Lösungen für komplexe Probleme zu schaffen. Mein Ansatz kombiniert technische Kreativität mit Liebe zum Detail, immer mit dem Ziel, Software zu bauen, die nicht nur perfekt funktioniert, sondern auch eine außergewöhnliche Benutzererfahrung bietet."
     },
     "languages": "Sprachen: Italienisch (Muttersprache), Englisch (fließend), Spanisch (mittleres Niveau)",
-    "location": "Mailand, Italien",
+    "location": "Rom, Italien",
     "email": "roberto.saliola96@gmail.com",
     "website": "https://www.robertosaliola.com"
   },
@@ -98,15 +98,7 @@
     "backend": "Backend",
     "database": "Datenbank",
     "other": "Andere",
-    "level": "Niveau",
-    "legend": {
-      "title": "Fähigkeitsniveaus",
-      "expert": "Experte",
-      "advanced": "Fortgeschritten",
-      "intermediate": "Mittelstufe",
-      "basic": "Grundlagen",
-      "beginner": "Anfänger"
-    }
+    "level": "Niveau"
   },
   "blog": {
     "title": "Blog",

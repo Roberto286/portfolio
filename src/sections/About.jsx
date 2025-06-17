@@ -87,13 +87,21 @@ const About = () => {
               </p>
             </Card>
 
-            {/* Languages */}
+            {/* Languages and Location */}
             <Card className="text-left">
-              <div className="flex items-center space-x-3">
-                <span className="text-lg">🌍</span>
-                <span className="text-gray-700 dark:text-gray-300">
-                  {t('about.languages')}
-                </span>
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <span className="text-lg">🌍</span>
+                  <span className="text-gray-700 dark:text-gray-300">
+                    {t('about.languages')}
+                  </span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <span className="text-lg">📍</span>
+                  <span className="text-gray-700 dark:text-gray-300">
+                    {t('about.location')}
+                  </span>
+                </div>
               </div>
             </Card>
           </motion.div>

@@ -6,7 +6,7 @@ import Icon from '../components/Icon';
 import { projectsData } from '../config/projects.config';
 
 const Projects = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section id="projects" className="py-20 bg-white dark:bg-gray-900">
@@ -36,7 +36,7 @@ const Projects = () => {
                 <div className="relative mb-6 rounded-lg overflow-hidden">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={t(project.title)}
                     className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -44,12 +44,11 @@ const Projects = () => {
 
                 <div className="flex-1 flex flex-col">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                    {project.title}
+                    {t(project.title)}
                   </h3>
 
                   <p className="text-gray-600 dark:text-gray-400 mb-4 flex-1 leading-relaxed">
-                    {project.description[i18n.language] ||
-                      project.description.en}
+                    {t(project.description)}
                   </p>
 
                   <div className="flex flex-wrap gap-2 mb-6">

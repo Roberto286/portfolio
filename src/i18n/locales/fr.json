@@ -35,7 +35,7 @@
       "content": "J'aime créer des solutions élégantes à des problèmes complexes. Mon approche combine créativité technique avec attention aux détails, toujours avec l'objectif de construire des logiciels qui non seulement fonctionnent parfaitement, mais offrent aussi une expérience utilisateur exceptionnelle."
     },
     "languages": "Langues: Italien (natif), Anglais (courant), Espagnol (intermédiaire)",
-    "location": "Milan, Italie",
+    "location": "Rome, Italie",
     "email": "roberto.saliola96@gmail.com",
     "website": "https://www.robertosaliola.com"
   },
@@ -98,15 +98,7 @@
     "backend": "Backend",
     "database": "Base de Données",
     "other": "Autre",
-    "level": "Niveau",
-    "legend": {
-      "title": "Niveaux de Compétence",
-      "expert": "Expert",
-      "advanced": "Avancé",
-      "intermediate": "Intermédiaire",
-      "basic": "Base",
-      "beginner": "Débutant"
-    }
+    "level": "Niveau"
   },
   "blog": {
     "title": "Blog",
