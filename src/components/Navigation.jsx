@@ -45,11 +45,7 @@ const Navigation = () => {
             className="flex items-center cursor-pointer"
             onClick={() => scrollToSection('#hero')}
           >
-            <img 
-              src="/logo.svg" 
-              alt="Roberto Saliola" 
-              className="w-10 h-10"
-            />
+            <img src="/logo.svg" alt="Roberto Saliola" className="w-10 h-10" />
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -86,13 +82,13 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button
+            <motion.button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+              className={`p-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors transform transition-transform ${isOpen ? 'rotate-180' : ''}`}
               aria-label="Toggle menu"
             >
               <Icon name={isOpen ? 'close' : 'menu'} size={24} />
-            </button>
+            </motion.button>
           </div>
         </div>
 
@@ -120,7 +116,7 @@ const Navigation = () => {
                     {t(`nav.${item.key}`)}
                   </motion.button>
                 ))}
-                
+
                 {/* Mobile Controls at bottom */}
                 <div className="flex justify-between items-center px-4 py-3 mt-4 border-t border-gray-200 dark:border-gray-700">
                   <LanguageSelector />
