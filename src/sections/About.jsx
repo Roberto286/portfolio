@@ -35,7 +35,7 @@ const About = () => {
             <div className="relative w-full max-w-md mx-auto">
               <div className="aspect-square bg-gradient-to-br from-primary-400 to-secondary-500 rounded-2xl shadow-2xl overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="/me.jpeg"
                   alt="Roberto Saliola"
                   className="w-full h-full object-cover"
                 />
