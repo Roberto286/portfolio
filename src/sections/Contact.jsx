@@ -86,7 +86,7 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <Card>
+            <Card padding="max-md:p-3 p-6">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
                 {t('contact.info.title')}
               </h3>
@@ -99,7 +99,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ x: 5 }}
-                    className="flex items-center p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors group"
+                    className="flex items-center max-md:p-2 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors group"
                   >
                     <div className="p-3 bg-primary-100 dark:bg-primary-900 rounded-lg mr-4 group-hover:bg-primary-200 dark:group-hover:bg-primary-800 transition-colors">
                       <Icon
@@ -163,7 +163,7 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <Card>
+            <Card padding="max-md:p-3 p-6">
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div>
                   <label
@@ -256,7 +256,7 @@ const Contact = () => {
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className={`p-4 rounded-lg flex items-center ${
+                    className={`max-md:p-2 p-4 rounded-lg flex items-center ${
                       submitStatus === 'success'
                         ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200'
                         : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'
