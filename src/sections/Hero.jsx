@@ -40,11 +40,11 @@ const Hero = () => {
           transition={{
             duration: 25,
             repeat: Infinity,
-            ease: "linear"
+            ease: 'linear',
           }}
           className="absolute w-32 h-32 bg-primary-400 dark:bg-primary-600 rounded-full mix-blend-multiply filter blur-xl opacity-30"
         />
-        
+
         <motion.div
           animate={{
             x: [0, 100, 0],
@@ -54,7 +54,7 @@ const Hero = () => {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "linear"
+            ease: 'linear',
           }}
           className="absolute -top-40 -right-40 w-80 h-80 bg-primary-200 dark:bg-primary-900 rounded-full mix-blend-multiply filter blur-xl opacity-70"
         />
@@ -67,7 +67,7 @@ const Hero = () => {
           transition={{
             duration: 25,
             repeat: Infinity,
-            ease: "linear"
+            ease: 'linear',
           }}
           className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary-200 dark:bg-secondary-900 rounded-full mix-blend-multiply filter blur-xl opacity-70"
         />
@@ -79,7 +79,7 @@ const Hero = () => {
           transition={{
             duration: 8,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: 'easeInOut',
           }}
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent-200 dark:bg-accent-900 rounded-full mix-blend-multiply filter blur-2xl opacity-30"
         />
@@ -106,7 +106,12 @@ const Hero = () => {
           <motion.h1
             initial={{ opacity: 0, y: 30, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ delay: 0.3, duration: 0.8, type: "spring", stiffness: 100 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.8,
+              type: 'spring',
+              stiffness: 100,
+            }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-600 bg-clip-text text-transparent mb-6 leading-tight"
           >
             {t('hero.name')}
@@ -143,7 +148,6 @@ const Hero = () => {
               { text: t('hero.skills.frontend'), icon: '⚛️' },
               { text: t('hero.skills.backend'), icon: '🔧' },
               { text: t('hero.skills.fullstack'), icon: '🚀' },
-              { text: t('hero.skills.modern'), icon: '💡' },
             ].map((skill, index) => (
               <motion.div
                 key={skill.text}
@@ -168,10 +172,7 @@ const Hero = () => {
             transition={{ delay: 1.2, duration: 0.8 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12"
           >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 size="lg"
                 onClick={scrollToProjects}
@@ -180,7 +181,7 @@ const Hero = () => {
                 <motion.span
                   className="relative z-10 flex items-center"
                   whileHover={{ x: 5 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 10 }}
                 >
                   {t('hero.cta')}
                   <Icon
@@ -208,7 +209,7 @@ const Hero = () => {
                   aria-label={link.name}
                 >
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-primary-500 to-secondary-500 opacity-0 group-hover:opacity-10 transition-opacity"
+                    className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-10 transition-opacity"
                     layoutId={`social-bg-${link.name}`}
                   />
                   <Icon name={link.icon} size={24} className="relative z-10" />
@@ -226,12 +227,16 @@ const Hero = () => {
           >
             <motion.div
               animate={{ y: [0, 8, 0] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
               className="w-6 h-10 border-2 border-primary-600 dark:border-primary-400 rounded-full mx-auto relative"
             >
               <motion.div
                 animate={{ y: [2, 12, 2], opacity: [1, 0.3, 1] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+                }}
                 className="w-1 h-2 bg-primary-600 dark:bg-primary-400 rounded-full mx-auto mt-2"
               />
             </motion.div>
