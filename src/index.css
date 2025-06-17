@@ -5,14 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  overflow-x: clip;
+}
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
-}
-
-/* Prevent horizontal scroll */
-body {
-  overflow-x: hidden;
 }
 
 /* Custom scrollbar */
@@ -145,6 +144,7 @@ body {
   transition-property: background-color, border-color, color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  outline: 1px solid red; /* debug */
 }
 
 /* Form styles */
