@@ -1,0 +1,3 @@
+- fix della select della lingua su mobile
+- GDPR per la mail
+- Caricare foto mia in hd
