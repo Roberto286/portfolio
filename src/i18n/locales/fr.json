@@ -134,9 +134,6 @@
     "sending": "Envoi en cours...",
     "success": "Message envoyé avec succès!",
     "error": "Erreur lors de l'envoi du message.",
-    "privacy": {
-      "consent": "J'accepte que mes données soient utilisées exclusivement pour répondre à ma demande de contact, conformément à la politique de confidentialité. Les données ne seront pas partagées avec des tiers."
-    },
     "info": {
       "title": "Informations de Contact",
       "email": "Email",

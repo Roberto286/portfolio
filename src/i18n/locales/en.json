@@ -134,9 +134,6 @@
     "sending": "Sending...",
     "success": "Message sent successfully!",
     "error": "Error sending message.",
-    "privacy": {
-      "consent": "I agree that my data will be used exclusively to respond to my contact request, in accordance with the privacy policy. Data will not be shared with third parties."
-    },
     "info": {
       "title": "Contact Information",
       "email": "Email",

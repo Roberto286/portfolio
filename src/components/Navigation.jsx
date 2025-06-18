@@ -84,65 +84,49 @@ const Navigation = () => {
           <div className="md:hidden">
             <motion.button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+              className={`p-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors transform transition-transform ${isOpen ? 'rotate-180' : ''}`}
               aria-label="Toggle menu"
             >
               <Icon name={isOpen ? 'close' : 'menu'} size={24} />
             </motion.button>
           </div>
         </div>
-      </div>
 
-      {/* Mobile Navigation - Full Screen */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="md:hidden fixed inset-0 top-16 bg-white dark:bg-gray-900 z-40 overflow-y-auto"
-          >
-            <div className="flex flex-col h-full">
-              {/* Navigation Items */}
-              <div className="flex-1 py-8 px-4">
-                <div className="space-y-4">
-                  {navItems.map((item, index) => (
-                    <motion.button
-                      key={item.key}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                      onClick={() => scrollToSection(item.href)}
-                      className={`block w-full text-left px-6 py-4 text-lg font-medium rounded-lg transition-colors ${
-                        activeSection === item.href.substring(1)
-                          ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20'
-                          : 'text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800'
-                      }`}
-                    >
-                      {t(`nav.${item.key}`)}
-                    </motion.button>
-                  ))}
-                </div>
-              </div>
+        {/* Mobile Navigation */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="md:hidden border-t border-gray-200 dark:border-gray-700 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md"
+            >
+              <div className="py-4 space-y-2 max-w-full overflow-hidden">
+                {navItems.map((item) => (
+                  <motion.button
+                    key={item.key}
+                    whileHover={{ x: 5 }}
+                    onClick={() => scrollToSection(item.href)}
+                    className={`block w-full text-left px-4 py-3 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors rounded-lg mx-2 ${
+                      activeSection === item.href.substring(1)
+                        ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20'
+                        : ''
+                    }`}
+                  >
+                    {t(`nav.${item.key}`)}
+                  </motion.button>
+                ))}
 
-              {/* Controls at bottom */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                className="border-t border-gray-200 dark:border-gray-700 p-4"
-              >
-                <div className="flex justify-between items-center">
-                  <div className="relative">
-                    <LanguageSelector isMobile={true} />
-                  </div>
+                {/* Mobile Controls at bottom */}
+                <div className="flex justify-between items-center px-4 py-3 mt-4 border-t border-gray-200 dark:border-gray-700">
+                  <LanguageSelector />
                   <ThemeToggle />
                 </div>
-              </motion.div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </motion.nav>
   );
 };

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import Icon from '../components/Icon';
@@ -22,26 +21,13 @@ const Contact = () => {
   const onSubmit = async (data) => {
     setIsSubmitting(true);
 
+    // Simulate form submission
     try {
-      // Initialize EmailJS with your public key
-      emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY');
-
-      // Send email using EmailJS
-      await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID',
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID',
-        {
-          from_name: data.name,
-          from_email: data.email,
-          message: data.message,
-          to_name: 'Roberto Saliola',
-        }
-      );
-
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      console.log('Form data:', data);
       setSubmitStatus('success');
       reset();
-    } catch (error) {
-      console.error('EmailJS Error:', error);
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -91,7 +77,7 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -100,7 +86,7 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <Card padding="p-4 sm:p-6">
+            <Card padding="max-md:p-3 p-6">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
                 {t('contact.info.title')}
               </h3>
@@ -113,16 +99,16 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ x: 5 }}
-                    className="flex items-center p-3 sm:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors group"
+                    className="flex items-center max-md:p-2 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors group"
                   >
-                    <div className="p-3 bg-primary-100 dark:bg-primary-900 rounded-lg mr-4 group-hover:bg-primary-200 dark:group-hover:bg-primary-800 transition-colors flex-shrink-0">
+                    <div className="p-3 bg-primary-100 dark:bg-primary-900 rounded-lg mr-4 group-hover:bg-primary-200 dark:group-hover:bg-primary-800 transition-colors">
                       <Icon
                         name={info.icon}
                         size={24}
                         className="text-primary-600 dark:text-primary-400"
                       />
                     </div>
-                    <div className="min-w-0 flex-1">
+                    <div>
                       <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
                         {info.label}
                       </p>
@@ -139,7 +125,7 @@ const Contact = () => {
                     <Icon
                       name="external"
                       size={20}
-                      className="text-primary-600 dark:text-primary-400 mr-3 flex-shrink-0"
+                      className="text-primary-600 dark:text-primary-400 mr-3"
                     />
                     <div>
                       <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
@@ -154,7 +140,7 @@ const Contact = () => {
                     <Icon
                       name="check"
                       size={20}
-                      className="text-green-600 dark:text-green-400 mr-3 flex-shrink-0"
+                      className="text-green-600 dark:text-green-400 mr-3"
                     />
                     <div>
                       <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
@@ -176,9 +162,8 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="w-full"
           >
-            <Card padding="p-4 sm:p-6">
+            <Card padding="max-md:p-3 p-6">
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div>
                   <label
@@ -251,33 +236,6 @@ const Contact = () => {
                   )}
                 </div>
 
-                {/* GDPR Compliance */}
-                <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
-                  <div className="flex items-start space-x-3">
-                    <input
-                      type="checkbox"
-                      id="privacy"
-                      {...register('privacy', {
-                        required: 'Devi accettare la privacy policy',
-                      })}
-                      className="mt-1 h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
-                    />
-                    <div className="flex-1">
-                      <label
-                        htmlFor="privacy"
-                        className="text-sm text-gray-700 dark:text-gray-300"
-                      >
-                        {t('contact.privacy.consent')}
-                      </label>
-                      {errors.privacy && (
-                        <p className="text-red-500 text-sm mt-1">
-                          {errors.privacy.message}
-                        </p>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
                 <Button
                   type="submit"
                   size="lg"
@@ -285,7 +243,7 @@ const Contact = () => {
                   className="w-full"
                 >
                   {isSubmitting ? (
-                    <div className="flex items-center justify-center">
+                    <div className="flex items-center">
                       <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
                       {t('contact.sending')}
                     </div>
@@ -298,7 +256,7 @@ const Contact = () => {
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className={`p-4 rounded-lg flex items-center ${
+                    className={`max-md:p-2 p-4 rounded-lg flex items-center ${
                       submitStatus === 'success'
                         ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200'
                         : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'
@@ -307,13 +265,11 @@ const Contact = () => {
                     <Icon
                       name={submitStatus === 'success' ? 'check' : 'close'}
                       size={20}
-                      className="mr-2 flex-shrink-0"
+                      className="mr-2"
                     />
-                    <span className="text-sm">
-                      {submitStatus === 'success'
-                        ? t('contact.success')
-                        : t('contact.error')}
-                    </span>
+                    {submitStatus === 'success'
+                      ? t('contact.success')
+                      : t('contact.error')}
                   </motion.div>
                 )}
               </form>
