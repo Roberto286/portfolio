@@ -134,6 +134,9 @@
     "sending": "Wird gesendet...",
     "success": "Nachricht erfolgreich gesendet!",
     "error": "Fehler beim Senden der Nachricht.",
+    "privacy": {
+      "consent": "Ich stimme zu, dass meine Daten ausschließlich zur Beantwortung meiner Kontaktanfrage verwendet werden, in Übereinstimmung mit der Datenschutzrichtlinie. Die Daten werden nicht an Dritte weitergegeben."
+    },
     "info": {
       "title": "Kontaktinformationen",
       "email": "E-Mail",
