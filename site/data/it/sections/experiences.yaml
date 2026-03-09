@@ -1,7 +1,7 @@
 # section information
 section:
   name: Esperienze
-  id: esperienze
+  id: experiences
   enable: true
   weight: 3  # Prima di Education (che ha weight 4)
   showOnNavbar: true
