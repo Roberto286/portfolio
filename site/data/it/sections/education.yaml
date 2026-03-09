@@ -1,10 +1,10 @@
 # section information
 section:
   name: Formazione
-  id: education
-  template: sections/education.html
+  id: formazione
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
   enable: true
-  weight: 3
+  weight: 4  # Dopo Experiences (che ha weight 3)
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true

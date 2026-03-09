@@ -9,7 +9,8 @@
 // ====== PROJECTS SECTION ======
 
 // 1. Nascondi i filtri progetti (non necessari)
-#project-filter-buttons {
+// Il tema usa ID dinamico: project-filter-buttons-{sectionID}
+[id^="project-filter-buttons-"] {
   display: none !important;
 }
 
