@@ -5,7 +5,7 @@ image: "/images/foto_cv.jpg"
 
 contactInfo:
   email: "roberto.saliola96@gmail.com"
-  phone: "+39 388 5899 939"
+  # phone: "+39 388 5899 939" # Removed from public display
   github: "roberto286"
   linkedin: "roberto-saliola-340077224"
 
