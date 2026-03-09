@@ -3,7 +3,7 @@ section:
   name: Progetti
   id: projects
   enable: true
-  weight: 5
+  weight: 4  # Dopo Competenze, prima di Formazione
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true

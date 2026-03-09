@@ -4,7 +4,7 @@ section:
   id: education
   template: sections/education.html # Use "sections/education-alt.html for alternate template.
   enable: true
-  weight: 4  # After Experiences (which has weight 3)
+  weight: 5  # Last section
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true

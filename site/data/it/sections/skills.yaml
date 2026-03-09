@@ -3,7 +3,7 @@ section:
   name: Competenze
   id: skills
   enable: true
-  weight: 6
+  weight: 3  # Dopo Esperienze, prima di Progetti
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
