@@ -44,3 +44,28 @@
 #primary-skills .col-lg-4:nth-child(11) {
   margin-bottom: 2rem; // Dopo Database (2 skills)
 }
+
+// ====== HOME SECTION - PARTICLES BACKGROUND ======
+
+// 4. Setup per particles network canvas
+#home {
+  position: relative;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); // slate-900 to slate-800
+  
+  // Ensure content stays above canvas and is centered (no background div offset needed)
+  > .content {
+    position: relative;
+    z-index: 1;
+    top: 0 !important; // Override theme's -65% (needed when background div exists)
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Dark mode: leggermente più scuro
+html[data-theme='dark'] #home {
+  background: linear-gradient(135deg, #020617 0%, #0f172a 100%); // slate-950 to slate-900
+}

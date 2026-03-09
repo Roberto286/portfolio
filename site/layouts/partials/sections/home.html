@@ -1,0 +1,76 @@
+{{ $author:= site.Data.author }}
+{{ if (index site.Data site.Language.Lang).author }}
+{{ $author = (index site.Data site.Language.Lang).author }}
+{{ end }}
+
+{{ $name:="Jane Doe" }}
+{{ if $author.nickname }}
+{{ $name = $author.nickname }}
+{{ else if $author.name }}
+{{ $name = $author.name }}
+{{ end }}
+
+{{ $sections:= site.Data.sections }}
+{{ if (index site.Data site.Language.Lang).sections }}
+{{ $sections = (index site.Data site.Language.Lang).sections }}
+{{ end }}
+
+{{ $backgroundImage:= "/images/default-background.jpg" }}
+{{ if site.Params.background }}
+{{ $backgroundImage = site.Params.background }}
+{{ end }}
+
+{{ $darkBackgroundImage:= $backgroundImage }}
+{{ if site.Params.darkBackground }}
+{{ $darkBackgroundImage = site.Params.darkBackground }}
+{{ end }}
+
+{{ $authorImage:= "/images/default-avatar.png" }}
+{{ if $author.image }}
+{{ $authorImage = $author.image }}
+{{ end }}
+{{ $authorImage := resources.Get $authorImage }}
+
+{{/* apply image processing. don't use "Fit" in svg or gif because its not supported */}}
+{{ if and $authorImage (and (ne $authorImage.MediaType.SubType "svg") ( ne $authorImage.MediaType.SubType "gif")) }}
+{{ $authorImage = $authorImage.Fit "148x148" }}
+{{ end }}
+
+{{/* Background image disabled - using particles network instead */}}
+
+<div class="container-fluid home" id="home">
+  <span class="on-the-fly-behavior"></span>
+  {{/* Background image div removed - particles canvas will be injected by JS */}}
+  <div class="container content text-center">
+    <img src="{{ $authorImage.RelPermalink }}" class="rounded-circle mx-auto d-block img-fluid" alt="Author Image" />
+    <h1 class="greeting"> {{ $author.greeting }} {{ $name }}</h1>
+    {{ if $author.subtitle }}
+    <h2 class="greeting-subtitle">{{ $author.subtitle }}</h2>
+    {{ end }}
+    <div class="typing-carousel">
+      <span id="typed" class="typed"></span>
+      <span class="ityped-cursor"></span>
+    </div>
+    <ul id="typing-carousel-data">
+      {{ if $author.summary }}
+      {{ range $author.summary }}
+      <li>{{ . }}</li>
+      {{ end}}
+      {{ end }}
+    </ul>
+    {{ if $sections }}
+    {{ range first 1 (where (sort $sections "section.weight") ".section.enable" true) }}
+    {{ $sectionID := replace (lower .section.name) " " "-" }}
+    {{ if .section.id }}
+    {{ $sectionID = .section.id }}
+    {{ end }}
+    <a href="#{{ $sectionID }}" class="arrow-center" aria-label="{{ i18n " read" }} {{ i18n "more" }} - {{ $name }}"> <i
+        class="arrow bounce fa fa-chevron-down"></i></a>
+    {{ end }}
+    {{ end }}
+  </div>
+
+  {{/* Particles Network Background */}}
+  {{ $particlesJS := resources.Get "js/particles-network.js" | fingerprint }}
+  <script src="{{ $particlesJS.RelPermalink }}" defer></script>
+</div>
