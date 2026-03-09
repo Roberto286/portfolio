@@ -23,64 +23,63 @@ $box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
 // themes
 $themes: (
   'light': (
-    // Verde tech - emerald-600
-    'accent-color': #059669,
-    // Verde tech hover - emerald-500
-    'hover-over-accent-color': #10b981,
-    // Bianco su verde
-    'text-over-accent-color': #ffffff,
-    // Bianco puro
-    'bg-primary': #ffffff,
-    // Quasi nero per elementi invertiti
-    'bg-primary-inverse': #0a0a0a,
-    // Grigio chiarissimo
-    'bg-secondary': #f5f5f5,
-    // Bianco per card
-    'bg-card': #ffffff,
-    // Quasi nero per titoli
-    'heading-color': #0a0a0a,
-    // Grigio scuro per testo
-    'text-color': #404040,
-    // Grigio chiaro per testo invertito
-    'inverse-text-color': #d4d4d4,
-    // Grigio medio per testo secondario
-    'muted-text-color': #737373,
-    // Verde per inline code
-    'inline-code-color': #059669,
-    // Verde chiarissimo per highlights
-    'highlight-color': #d1fae5,
-    // Quasi nero per footer
-    'footer-color': #0a0a0a,
+    // cyan 600
+    'accent-color': #0891b2,
+    // cyan 500
+    'hover-over-accent-color': #06b6d4,
+    // zinc 200
+    'text-over-accent-color': #e4e4e7,
+    // slate 50
+    'bg-primary': #f8fafc,
+    // slate 900
+    'bg-primary-inverse': #0f172a,
+    // slate 200
+    'bg-secondary': #e2e8f0,
+    'bg-card': #fff,
+    // slate 800
+    'heading-color': #1e293b,
+    // slate 700
+    'text-color': #334155,
+    // slate 300
+    'inverse-text-color': #cbd5e1,
+    // slate 500
+    'muted-text-color': #64748b,
+    // red 600
+    'inline-code-color': #dc2626,
+    // amber 200
+    'highlight-color': #fde68a,
+    // slate 900
+    'footer-color': #0f172a,
   ),
   'dark': (
-    // Verde emerald luminoso - emerald-500
-    'accent-color': #10b981,
-    // Verde emerald hover - emerald-400
-    'hover-over-accent-color': #34d399,
-    // Nero su verde
-    'text-over-accent-color': #000000,
-    // Grigio scurissimo (non nero puro)
-    'bg-primary': #0a0a0a,
-    // Bianco per elementi invertiti
-    'bg-primary-inverse': #ffffff,
-    // Grigio molto scuro
-    'bg-secondary': #171717,
-    // Grigio molto scuro per card
-    'bg-card': #171717,
-    // Verde emerald per titoli!!!
-    'heading-color': #10b981,
-    // Grigio chiaro per testo
-    'text-color': #d4d4d4,
-    // Quasi nero per testo invertito
-    'inverse-text-color': #0a0a0a,
-    // Grigio medio per testo secondario
-    'muted-text-color': #a3a3a3,
-    // Verde emerald per inline code
-    'inline-code-color': #10b981,
-    // Verde scuro per highlights
-    'highlight-color': #064e3b,
-    // Nero puro per footer
-    'footer-color': #000000,
+    // cyan 600
+    'accent-color': #0891b2,
+    // cyan 500
+    'hover-over-accent-color': #06b6d4,
+    // zinc 200
+    'text-over-accent-color': #e4e4e7,
+    // gray-800
+    'bg-primary': #1f2937,
+    // slate 900
+    'bg-primary-inverse': #0f172a,
+    // gray 900
+    'bg-secondary': #111827,
+    // slate 800
+    'bg-card': #1e293b,
+    // slate 100
+    'heading-color': #f1f5f9,
+    // slate 300
+    'text-color': #cbd5e1,
+    // slate 900
+    'inverse-text-color': #0f172a,
+    // slate 500
+    'muted-text-color': #95aed1,
+    // red 600
+    'inline-code-color': #dc2626,
+    // amber 200
+    'highlight-color': #fde68a,
+    // slate 900
+    'footer-color': #0f172a,
   ),
 );
 
