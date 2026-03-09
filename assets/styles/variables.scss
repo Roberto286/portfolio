@@ -1,0 +1,123 @@
+@use 'sass:map';
+
+$breakpoints: (
+  tiny: 320px,
+  small: 640px,
+  medium: 768px,
+  large: 1024px,
+  very-large: 1280px,
+  extra-large: 1536px,
+  ultra-large: 2560px,
+);
+
+// Color are chosen from TailwindCSS color scheme
+// https://tailwindcss.com/docs/customizing-colors
+
+// transitions
+$transition-duration: 0.3s;
+$transition-type: ease-out;
+
+// borders and shadows
+$box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
+
+// themes
+$themes: (
+  'light': (
+    // Verde tech - emerald-600
+    'accent-color': #059669,
+    // Verde tech hover - emerald-500
+    'hover-over-accent-color': #10b981,
+    // Bianco su verde
+    'text-over-accent-color': #ffffff,
+    // Bianco puro
+    'bg-primary': #ffffff,
+    // Quasi nero per elementi invertiti
+    'bg-primary-inverse': #0a0a0a,
+    // Grigio chiarissimo
+    'bg-secondary': #f5f5f5,
+    // Bianco per card
+    'bg-card': #ffffff,
+    // Quasi nero per titoli
+    'heading-color': #0a0a0a,
+    // Grigio scuro per testo
+    'text-color': #404040,
+    // Grigio chiaro per testo invertito
+    'inverse-text-color': #d4d4d4,
+    // Grigio medio per testo secondario
+    'muted-text-color': #737373,
+    // Verde per inline code
+    'inline-code-color': #059669,
+    // Verde chiarissimo per highlights
+    'highlight-color': #d1fae5,
+    // Quasi nero per footer
+    'footer-color': #0a0a0a,
+  ),
+  'dark': (
+    // Verde emerald luminoso - emerald-500
+    'accent-color': #10b981,
+    // Verde emerald hover - emerald-400
+    'hover-over-accent-color': #34d399,
+    // Nero su verde
+    'text-over-accent-color': #000000,
+    // Grigio scurissimo (non nero puro)
+    'bg-primary': #0a0a0a,
+    // Bianco per elementi invertiti
+    'bg-primary-inverse': #ffffff,
+    // Grigio molto scuro
+    'bg-secondary': #171717,
+    // Grigio molto scuro per card
+    'bg-card': #171717,
+    // Verde emerald per titoli!!!
+    'heading-color': #10b981,
+    // Grigio chiaro per testo
+    'text-color': #d4d4d4,
+    // Quasi nero per testo invertito
+    'inverse-text-color': #0a0a0a,
+    // Grigio medio per testo secondario
+    'muted-text-color': #a3a3a3,
+    // Verde emerald per inline code
+    'inline-code-color': #10b981,
+    // Verde scuro per highlights
+    'highlight-color': #064e3b,
+    // Nero puro per footer
+    'footer-color': #000000,
+  ),
+);
+
+$brand-colors: (
+  'facebook': #3b5998,
+  'twitter': #1da1f2,
+  'linkedin': #0077b5,
+  'reddit': #ff4500,
+  'tumblr': #35465c,
+  'pocket': #ef4056,
+  'diaspora': #1e1e1e,
+  'whatsapp': #25d366,
+);
+
+$alerts: (
+  'success': (
+    // green 100
+    'bg-color': #dcfce7,
+    // green 800
+    'text-color': #166534,
+  ),
+  'info': (
+    // sky 100
+    'bg-color': #e0f2fe,
+    // sky 800
+    'text-color': #075985,
+  ),
+  'warning': (
+    // yellow 100
+    'bg-color': #fef9c3,
+    // yellow 800
+    'text-color': #854d0e,
+  ),
+  'danger': (
+    // red 100
+    'bg-color': #fee2e2,
+    // red 800
+    'text-color': #991b1b,
+  ),
+);

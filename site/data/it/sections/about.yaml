@@ -1,0 +1,52 @@
+section:
+  name: "Chi sono"
+  id: "about"
+  enable: true
+  weight: 1
+  showOnNavbar: true
+
+designation: "Full Stack Developer"
+company:
+  name: "Accenture"
+  url: "https://www.accenture.com"
+
+summary: |
+  Full Stack Developer con oltre 3 anni di esperienza nello sviluppo di applicazioni web scalabili 
+  per settori bancario, telecomunicazioni e pubblica amministrazione. Attualmente Technical Lead in 
+  Accenture, dove mi occupo di progettazione e sviluppo di architetture moderne con tecnologie come 
+  React, Angular, Node.js, NestJS e MongoDB.
+  
+  Appassionato di continuous learning, contribuisco attivamente a progetti open source e mi mantengo 
+  costantemente aggiornato attraverso corsi, certificazioni e progetti personali. Credo fortemente 
+  nel valore del codice pulito, delle best practices e della collaborazione in team.
+
+socialLinks:
+  - name: "Email"
+    icon: "fas fa-envelope"
+    url: "mailto:roberto.saliola96@gmail.com"
+    
+  - name: "GitHub"
+    icon: "fab fa-github"
+    url: "https://github.com/roberto286"
+    
+  - name: "LinkedIn"
+    icon: "fab fa-linkedin"
+    url: "https://www.linkedin.com/in/roberto-saliola-340077224/"
+
+resourceLinks:
+  - title: "CV Italiano"
+    url: "/files/Roberto_Saliola_CV_ita.pdf"
+    
+  - title: "English CV"
+    url: "/files/Roberto_Saliola_CV_eng.pdf"
+
+badges:
+  - type: "certification"
+    name: "MongoDB Associate Developer"
+    url: "https://learn.mongodb.com/c/9zCRJmjOREejOF--q_0hFg"
+    badge: "https://learn.mongodb.com/c/9zCRJmjOREejOF--q_0hFg"
+    
+  - type: "certification"
+    name: "MongoDB Associate Solution Architect"
+    url: "https://learn.mongodb.com/c/Ar7j63l1TbqpDxYzvEMNFA"
+    badge: "https://learn.mongodb.com/c/Ar7j63l1TbqpDxYzvEMNFA"

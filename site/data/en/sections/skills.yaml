@@ -1,0 +1,83 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Filter buttons (disabled as per requirements)
+filter: false
+
+# Your Skills
+skills:
+# Frontend Skills
+- name: JavaScript
+  logo: /images/sections/skills/javascript.svg
+  summary: "Primary language for frontend and backend development with expertise in ES6+ and async programming."
+  url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+
+- name: TypeScript
+  logo: /images/sections/skills/typescript.svg
+  summary: "Type-safe development with TypeScript for scalable and maintainable enterprise applications."
+  url: "https://www.typescriptlang.org/"
+
+- name: React
+  logo: /images/sections/skills/react.svg
+  summary: "Building modern and performant UIs with hooks, context API, and state management."
+  url: "https://react.dev/"
+
+- name: Angular
+  logo: /images/sections/skills/angular.svg
+  summary: "Developing enterprise applications with Angular, RxJS, and dependency injection."
+  url: "https://angular.io/"
+
+- name: HTML5
+  logo: /images/sections/skills/html5.svg
+  summary: "Semantic and accessible markup for modern web applications."
+  url: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+
+- name: CSS3
+  logo: /images/sections/skills/css3.svg
+  summary: "Responsive styling with CSS3, Flexbox, Grid, and SCSS preprocessors."
+  url: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+
+# Backend Skills
+- name: Node.js
+  logo: /images/sections/skills/nodedotjs.svg
+  summary: "JavaScript runtime for scalable and performant backend development."
+  url: "https://nodejs.org/"
+
+- name: NestJS
+  logo: /images/sections/skills/nestjs.svg
+  summary: "Enterprise framework for building efficient and scalable server-side applications."
+  url: "https://nestjs.com/"
+
+- name: Express
+  logo: /images/sections/skills/express.svg
+  summary: "Minimalist framework for REST APIs and Node.js web applications."
+  url: "https://expressjs.com/"
+
+# Database Skills
+- name: MongoDB
+  logo: /images/sections/skills/mongodb.svg
+  summary: "NoSQL database for modern applications with aggregation framework and replica sets."
+  url: "https://www.mongodb.com/"
+
+- name: PostgreSQL
+  logo: /images/sections/skills/postgresql.svg
+  summary: "Advanced relational database with JSON support and complex queries."
+  url: "https://www.postgresql.org/"
+
+# Tools & DevOps
+- name: Git
+  logo: /images/sections/skills/git.svg
+  summary: "Version control with Git, GitHub, and collaborative workflows."
+  url: "https://git-scm.com/"
+
+- name: Docker
+  logo: /images/sections/skills/docker.svg
+  summary: "Application containerization for consistent and scalable deployments."
+  url: "https://www.docker.com/"

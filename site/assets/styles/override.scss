@@ -1,0 +1,248 @@
+// ===================================
+// PALETTE COLORI PERSONALIZZATA
+// Roberto Saliola Portfolio
+// Variante C - Minimale Elegante
+// ===================================
+
+// IMPORTANTE: Questo file viene caricato DOPO variables.scss del tema
+// Quindi possiamo sovrascrivere le variabili SCSS
+
+// ====== SOVRASCRIVI LE VARIABILI SCSS DEL TEMA ======
+// Ridefinisco la mappa $themes con i colori personalizzati
+
+$themes: (
+  'light': (
+    // Verde tech - emerald-600
+    'accent-color': #059669,
+    // Verde tech hover - emerald-500
+    'hover-over-accent-color': #10b981,
+    // Bianco su verde
+    'text-over-accent-color': #ffffff,
+    // Bianco puro
+    'bg-primary': #ffffff,
+    // Quasi nero per elementi invertiti
+    'bg-primary-inverse': #0a0a0a,
+    // Grigio chiarissimo
+    'bg-secondary': #f5f5f5,
+    // Bianco per card
+    'bg-card': #ffffff,
+    // Quasi nero per titoli
+    'heading-color': #0a0a0a,
+    // Grigio scuro per testo
+    'text-color': #404040,
+    // Grigio chiaro per testo invertito
+    'inverse-text-color': #d4d4d4,
+    // Grigio medio per testo secondario
+    'muted-text-color': #737373,
+    // Verde per inline code
+    'inline-code-color': #059669,
+    // Verde chiarissimo per highlights
+    'highlight-color': #d1fae5,
+    // Quasi nero per footer
+    'footer-color': #0a0a0a,
+  ),
+  'dark': (
+    // Verde emerald luminoso - emerald-500
+    'accent-color': #10b981,
+    // Verde emerald hover - emerald-400
+    'hover-over-accent-color': #34d399,
+    // Nero su verde
+    'text-over-accent-color': #000000,
+    // Grigio scurissimo (non nero puro)
+    'bg-primary': #0a0a0a,
+    // Bianco per elementi invertiti
+    'bg-primary-inverse': #ffffff,
+    // Grigio molto scuro
+    'bg-secondary': #171717,
+    // Grigio molto scuro per card
+    'bg-card': #171717,
+    // Verde emerald per titoli!!!
+    'heading-color': #10b981,
+    // Grigio chiaro per testo
+    'text-color': #d4d4d4,
+    // Quasi nero per testo invertito
+    'inverse-text-color': #0a0a0a,
+    // Grigio medio per testo secondario
+    'muted-text-color': #a3a3a3,
+    // Verde emerald per inline code
+    'inline-code-color': #10b981,
+    // Verde scuro per highlights
+    'highlight-color': #064e3b,
+    // Nero puro per footer
+    'footer-color': #000000,
+  ),
+) !default;
+
+// ====== APPLICA I COLORI CON !IMPORTANT ======
+// Forza l'applicazione dei colori personalizzati
+
+:root {
+  // Light mode - Bianco + Verde tech
+  --primary-color: #059669 !important;
+  --primary-color-rgb: 5, 150, 105;
+  --background-color: #ffffff !important;
+  --secondary-background-color: #f5f5f5 !important;
+  --card-background-color: #ffffff !important;
+  --text-color: #404040 !important;
+  --heading-color: #0a0a0a !important;
+  --muted-color: #737373 !important;
+  --code-color: #059669 !important;
+  --highlight-color: #d1fae5 !important;
+  --footer-background-color: #0a0a0a !important;
+  --footer-text-color: #ffffff !important;
+}
+
+[data-theme="dark"] {
+  // Dark mode - Nero scurissimo + Verde emerald
+  --primary-color: #10b981 !important;
+  --primary-color-rgb: 16, 185, 129;
+  --background-color: #0a0a0a !important;
+  --secondary-background-color: #171717 !important;
+  --card-background-color: #171717 !important;
+  --text-color: #d4d4d4 !important;
+  --heading-color: #10b981 !important;
+  --muted-color: #a3a3a3 !important;
+  --code-color: #10b981 !important;
+  --highlight-color: #064e3b !important;
+  --footer-background-color: #000000 !important;
+  --footer-text-color: #d4d4d4 !important;
+}
+
+// Applica i colori agli elementi con maggiore specificità
+body {
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.heading, .section-title, .card-title {
+  color: var(--heading-color) !important;
+}
+
+.card, .section-card, .achievement-card,
+.education-card, .experience-card, .project-card, .skill-card {
+  background-color: var(--card-background-color) !important;
+}
+
+a {
+  color: var(--primary-color) !important;
+  
+  &:hover {
+    color: var(--primary-color) !important;
+    opacity: 0.8;
+  }
+}
+
+.btn-primary, .button-primary, .badge-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  
+  &:hover {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    opacity: 0.9;
+  }
+}
+
+footer, .footer {
+  background-color: var(--footer-background-color) !important;
+  color: var(--footer-text-color) !important;
+}
+
+code, .code, pre {
+  color: var(--code-color) !important;
+}
+
+// Navbar
+.navbar {
+  background-color: var(--background-color) !important;
+  
+  .nav-link {
+    color: var(--text-color) !important;
+    
+    &:hover {
+      color: var(--primary-color) !important;
+    }
+  }
+}
+
+// Sections
+section {
+  background-color: var(--background-color) !important;
+}
+
+.section-holder {
+  background-color: var(--secondary-background-color) !important;
+}
+
+// Forza i colori accent su tutti gli elementi che li usano
+.bg-accent, .badge-accent, .btn-accent {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.text-accent {
+  color: var(--primary-color) !important;
+}
+
+.border-accent {
+  border-color: var(--primary-color) !important;
+}
+
+// Progress bars e timeline
+.progress-bar {
+  background-color: var(--primary-color) !important;
+}
+
+.timeline-line {
+  background-color: var(--primary-color) !important;
+}
+
+// Hover states
+*:hover {
+  .text-accent {
+    color: var(--primary-color) !important;
+    opacity: 0.8;
+  }
+}
+
+// ===================================
+// PERSONALIZZAZIONI LAYOUT
+// ===================================
+
+// 1. NASCONDI FILTRI PROGETTI
+#project-filter-buttons {
+  display: none !important;
+}
+
+// 2. PROGETTI - SHOW MORE
+// Nascondi progetti dopo i primi 3
+#project-card-holder .project-card:nth-child(n+4) {
+  display: none;
+}
+
+#project-card-holder.show-all .project-card {
+  display: block;
+}
+
+// Bottone "Mostra tutti"
+.show-more-projects-btn {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+// 3. SKILLS - SPAZIATURA CATEGORIE
+// Aggiunge spazio visivo tra gruppi di skills
+// Nota: Numeri basati sull'ordine nel YAML (6 frontend, 3 backend, 2 database, 2 tools)
+
+#primary-skills .col-lg-4:nth-child(6) {
+  margin-bottom: 2rem; // Dopo Frontend (6 skills)
+}
+
+#primary-skills .col-lg-4:nth-child(9) {
+  margin-bottom: 2rem; // Dopo Backend (3 skills)
+}
+
+#primary-skills .col-lg-4:nth-child(11) {
+  margin-bottom: 2rem; // Dopo Database (2 skills)
+}

@@ -1,0 +1,68 @@
+# section information
+section:
+  name: Progetti
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: Tutti
+  filter: "all"
+- name: Professionale
+  filter: "professional"
+- name: Personale
+  filter: "personal"
+- name: Accademico
+  filter: "academic"
+
+# your projects
+projects:
+- name: Reelcipe - Recipe Social Platform
+  logo: /images/sections/projects/reelcipe.png
+  role: Full Stack Developer
+  timeline: "2024 - Presente"
+  repo: https://github.com/roberto286/reelcipe
+  # url: ""  # If the project has a live URL
+  summary: Piattaforma social per condividere ricette culinarie con funzionalità video, scoperta e interazione tra utenti.
+  tags: ["personal", "typescript", "react", "nodejs", "mongodb"]
+
+- name: MFE Orchestrator - Micro Frontend Framework
+  logo: /images/sections/projects/mfe.png
+  role: Creator & Maintainer
+  timeline: "2024"
+  repo: https://github.com/roberto286/mfe-orchestrator
+  summary: Framework per orchestrare micro frontend con routing dinamico, lazy loading e gestione dello stato condiviso.
+  tags: ["personal", "typescript", "javascript", "micro-frontend"]
+
+- name: Zero-dep-api - Lightweight API Framework
+  logo: /images/sections/projects/zero-dep-api.png
+  role: Creator & Maintainer
+  timeline: "2023"
+  repo: https://github.com/roberto286/zero-dep-api
+  summary: Framework API Node.js leggero senza dipendenze esterne, con routing, middleware e validazione built-in.
+  tags: ["personal", "nodejs", "javascript", "framework"]
+
+- name: Enterprise Banking Platform
+  logo: /images/sections/projects/accenture.png
+  role: Advanced App Engineering Analyst
+  timeline: "2024"
+  summary: Sviluppo di applicazione banking enterprise con architettura microservizi, API gateway e integrazione sistemi legacy.
+  tags: ["professional", "typescript", "nestjs", "mongodb", "docker"]
+
+- name: E-Commerce Modernization
+  logo: /images/sections/projects/accenture.png
+  role: App Engineering Associate
+  timeline: "2023-2024"
+  summary: Refactoring e modernizzazione di piattaforma e-commerce legacy con migrazione a stack moderno e ottimizzazione performance.
+  tags: ["professional", "react", "nodejs", "postgresql"]
+
+- name: Internal Tools Dashboard
+  logo: /images/sections/projects/accenture.png
+  role: App Engineering Analyst
+  timeline: "2023"
+  summary: Dashboard per la gestione di strumenti interni con visualizzazione dati real-time e integrazione con API esterne.
+  tags: ["professional", "angular", "typescript", "nodejs"]

@@ -1,0 +1,149 @@
+# section information
+section:
+  name: Formazione
+  id: education
+  template: sections/education.html
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: Computer Science
+  icon: fa-graduation-cap
+  timeframe: 2023-Presente
+  institution:
+    name: Boot.dev
+    url: "https://www.boot.dev/"
+  grade:
+    scale: Certificazioni
+    achieved: In corso
+  takenCourses:
+    collapseAfter: 5
+    courses:
+      - name: "Learn Python"
+        achieved: true
+      - name: "Learn Go"
+        achieved: true
+      - name: "Learn JavaScript"
+        achieved: true
+      - name: "Learn Data Structures"
+        achieved: true
+      - name: "Learn Algorithms"
+        achieved: true
+      - name: "Learn Object-Oriented Programming"
+        achieved: true
+      - name: "Learn Functional Programming"
+        achieved: true
+      - name: "Learn HTTP Servers"
+        achieved: true
+      - name: "Learn SQL"
+        achieved: true
+  extracurricularActivities:
+    - Progetti hands-on con implementazioni real-world
+    - Algoritmi avanzati e strutture dati
+
+- name: MongoDB Certified Developer
+  icon: fa-certificate
+  timeframe: 2024
+  institution:
+    name: MongoDB University
+    url: "https://learn.mongodb.com/"
+  grade:
+    scale: Certificazioni
+    achieved: 3/3
+  takenCourses:
+    collapseAfter: 3
+    courses:
+      - name: "MongoDB Node.js Developer Path"
+        achieved: true
+      - name: "MongoDB for SQL Professionals"
+        achieved: true
+      - name: "MongoDB Aggregation Framework"
+        achieved: true
+  publications:
+    - title: MongoDB Node.js Developer Certificate
+      url: "https://learn.mongodb.com/c/bkR66F2uT5CNCUZoNJ2OUg"
+    - title: MongoDB for SQL Professionals Certificate
+      url: "https://learn.mongodb.com/c/iWiT_3VGTDCoS30cF5LqAw"
+    - title: MongoDB Aggregation Framework Certificate
+      url: "https://learn.mongodb.com/c/eN5hEK8gQZeZdv_OvLHIaw"
+
+- name: Corso Avanzato .NET con C#
+  icon: fa-code
+  timeframe: 2023
+  institution:
+    name: TSI (Technology & Strategy Italia)
+    url: "#"
+  grade:
+    scale: Ore
+    achieved: 240
+  takenCourses:
+    collapseAfter: 3
+    courses:
+      - name: "C# Avanzato e Design Pattern"
+        achieved: true
+      - name: "ASP.NET Core Web API"
+        achieved: true
+      - name: "Entity Framework Core"
+        achieved: true
+      - name: "Microservizi con .NET"
+        achieved: true
+      - name: "Azure Cloud Services"
+        achieved: true
+  extracurricularActivities:
+    - Progetto finale con architettura a microservizi
+    - Best practices per sviluppo enterprise
+
+- name: Corso Full Stack Web Developer
+  icon: fa-laptop-code
+  timeframe: 2021-2022
+  institution:
+    name: Istituto Archimede
+    url: "#"
+  grade:
+    scale: Ore
+    achieved: 600
+  takenCourses:
+    collapseAfter: 3
+    courses:
+      - name: "HTML5, CSS3, JavaScript"
+        achieved: true
+      - name: "React.js & Angular"
+        achieved: true
+      - name: "Node.js & Express"
+        achieved: true
+      - name: "Database SQL e NoSQL"
+        achieved: true
+      - name: "Git & DevOps Fundamentals"
+        achieved: true
+  extracurricularActivities:
+    - Progetti hands-on con deployment reale
+    - Metodologie Agile e Scrum
+
+- name: Diploma Tecnico Turistico
+  icon: fa-school
+  timeframe: 2015-2020
+  institution:
+    name: ITT (Istituto Tecnico per il Turismo)
+    url: "#"
+  grade:
+    scale: Voto
+    achieved: 82/100
+  takenCourses:
+    collapseAfter: 3
+    courses:
+      - name: "Discipline Turistiche e Aziendali"
+        achieved: true
+      - name: "Geografia Turistica"
+        achieved: true
+      - name: "Lingue Straniere (Inglese, Francese)"
+        achieved: true
+      - name: "Informatica"
+        achieved: true
+      - name: "Diritto ed Economia"
+        achieved: true
+  extracurricularActivities:
+    - Stage presso agenzia viaggi
+    - Progetti di marketing territoriale

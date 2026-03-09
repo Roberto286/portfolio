@@ -1,0 +1,16 @@
+name: "Roberto Saliola"
+nickname: "Roberto"
+greeting: "Hi, I am"
+image: "/images/foto_cv.jpg"
+
+contactInfo:
+  email: "roberto.saliola96@gmail.com"
+  phone: "+39 388 5899 939"
+  github: "roberto286"
+  linkedin: "roberto-saliola-340077224"
+
+summary:
+  - "Full Stack Developer"
+  - "Passionate about coding"
+  - "Open source contributor"
+  - "Continuous learner"
