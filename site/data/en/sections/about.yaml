@@ -11,42 +11,39 @@ company:
   url: "https://www.accenture.com"
 
 summary: |
-  Full Stack Developer with over 3 years of experience building scalable web applications 
-  for banking, telecommunications, and public administration sectors. Currently serving as 
-  Technical Lead at Accenture, where I design and develop modern architectures using 
-  technologies such as React, Angular, Node.js, NestJS, and MongoDB.
-  
-  Passionate about continuous learning, I actively contribute to open source projects and 
-  stay updated through courses, certifications, and personal projects. I strongly believe 
-  in the value of clean code, best practices, and team collaboration.
+  I'm a Full Stack Developer with over 4 years of experience building web applications for the 
+  banking, telecommunications, and public sector. At Accenture, I work as a Technical Lead on 
+  projects built with React, Angular, Node.js, NestJS, and MongoDB.
+
+  I like building solutions that are clear, solid, and useful, with strong attention to code 
+  quality, development standards, and best practices. It's not enough for me that something just 
+  works: I want to understand whether it's truly sustainable over time, maintainable, and built on 
+  reliable foundations.
+
+  I approach every project with a practical and responsible mindset, always looking for the right 
+  balance between speed, quality, and the bigger picture. I keep learning through open source, 
+  courses, certifications, and personal projects, because in tech, growth and improvement are part 
+  of the job every single day.
+
+  If you'd like to get to know me better, below you'll find all the ways to contact me and my CVs 
+  to view or download.
 
 socialLinks:
   - name: "Email"
     icon: "fas fa-envelope"
-    url: "mailto:roberto.saliola96@gmail.com"
-    
+    url: "roberto.saliola96@gmail.com"
+
   - name: "GitHub"
     icon: "fab fa-github"
     url: "https://github.com/roberto286"
-    
+
   - name: "LinkedIn"
     icon: "fab fa-linkedin"
     url: "https://www.linkedin.com/in/roberto-saliola-340077224/"
 
 resourceLinks:
-  - title: "CV Italiano"
+  - title: "Italian CV"
     url: "/files/Roberto_Saliola_CV_ita.pdf"
-    
+
   - title: "English CV"
     url: "/files/Roberto_Saliola_CV_eng.pdf"
-
-badges:
-  - type: "certification"
-    name: "MongoDB Associate Developer"
-    url: "https://learn.mongodb.com/c/9zCRJmjOREejOF--q_0hFg"
-    badge: "https://learn.mongodb.com/c/9zCRJmjOREejOF--q_0hFg"
-    
-  - type: "certification"
-    name: "MongoDB Associate Solution Architect"
-    url: "https://learn.mongodb.com/c/Ar7j63l1TbqpDxYzvEMNFA"
-    badge: "https://learn.mongodb.com/c/Ar7j63l1TbqpDxYzvEMNFA"

@@ -1,6 +1,6 @@
 name: "Roberto Saliola"
 nickname: "Roberto"
-greeting: "Hi, I am"
+greeting: "Hi, I'm"
 image: "/images/foto_cv.jpg"
 
 contactInfo:
@@ -11,6 +11,6 @@ contactInfo:
 
 summary:
   - "Full Stack Developer"
-  - "Passionate about coding"
-  - "Open source contributor"
-  - "Continuous learner"
+  - "Web apps"
+  - "Open source"
+  - "Always growing"

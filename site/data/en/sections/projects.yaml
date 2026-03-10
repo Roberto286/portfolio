@@ -8,61 +8,40 @@ section:
   # Can optionally hide the title in sections
   # hideTitle: true
 
-# filter buttons
-buttons:
-- name: All
-  filter: "all"
-- name: Professional
-  filter: "professional"
-- name: Personal
-  filter: "personal"
-- name: Academic
-  filter: "academic"
-
 # your projects
 projects:
-- name: Reelcipe - Recipe Social Platform
-  logo: /images/sections/projects/reelcipe.png
+- name: Zero Dep API
+  role: Creator & Maintainer
+  timeline: "2024"
+  repo: https://github.com/Roberto286/zero-dep-api
+  summary: Node.js REST API built without external dependencies, with essential routing and support for the main HTTP methods. A project focused on lightness, clarity, and control of the native runtime.
+  tags: ["personal", "javascript", "nodejs", "rest-api", "framework"]
+
+- name: Reservation App
   role: Full Stack Developer
-  timeline: "2024 - Present"
-  repo: https://github.com/roberto286/reelcipe
-  # url: ""  # If the project has a live URL
-  summary: Social platform for sharing culinary recipes with video features, discovery, and user interaction.
-  tags: ["personal", "typescript", "react", "nodejs", "mongodb"]
+  timeline: "2025 - 2026"
+  repo: https://github.com/Roberto286/reservation-app
+  summary: Event reservation system with multi-role authentication, event management, and real-time availability. A full stack monorepo that brings together Angular, NestJS, and MongoDB in a single project foundation.
+  tags: ["personal", "typescript", "angular", "nestjs", "mongodb"]
+  url: https://reservations-app.sda.pp.ua/
 
-- name: MFE Orchestrator - Micro Frontend Framework
-  logo: /images/sections/projects/mfe.png
-  role: Creator & Maintainer
+- name: AI Agent
+  role: Creator
+  timeline: "2026"
+  repo: https://github.com/Roberto286/ai-agent
+  summary: Python CLI agent integrated with Gemini 2.5 Flash, designed to handle terminal prompts and monitor token usage. A useful project for exploring simple, practical, and concrete AI workflows.
+  tags: ["personal", "python", "ai", "gemini", "cli"]
+
+- name: Paladins Wheelspin
+  role: Full Stack Developer
   timeline: "2024"
-  repo: https://github.com/roberto286/mfe-orchestrator
-  summary: Framework for orchestrating micro frontends with dynamic routing, lazy loading, and shared state management.
-  tags: ["personal", "typescript", "javascript", "micro-frontend"]
+  repo: https://github.com/Roberto286/paladins_wheelspin
+  summary: Full stack project organized as a monorepo, with a React and TypeScript frontend and an Express backend on SQLite. A practical base for coordinating interface, APIs, and data persistence within the same development flow.
+  tags: ["personal", "typescript", "react", "express", "sqlite"]
 
-- name: Zero-dep-api - Lightweight API Framework
-  logo: /images/sections/projects/zero-dep-api.png
-  role: Creator & Maintainer
+- name: Python Audio Splitter
+  role: Creator
   timeline: "2023"
-  repo: https://github.com/roberto286/zero-dep-api
-  summary: Lightweight Node.js API framework with zero external dependencies, featuring built-in routing, middleware, and validation.
-  tags: ["personal", "nodejs", "javascript", "framework"]
-
-- name: Enterprise Banking Platform
-  logo: /images/sections/projects/accenture.png
-  role: Advanced App Engineering Analyst
-  timeline: "2024"
-  summary: Development of enterprise banking application with microservices architecture, API gateway, and legacy system integration.
-  tags: ["professional", "typescript", "nestjs", "mongodb", "docker"]
-
-- name: E-Commerce Modernization
-  logo: /images/sections/projects/accenture.png
-  role: App Engineering Associate
-  timeline: "2023-2024"
-  summary: Refactoring and modernization of legacy e-commerce platform with migration to modern stack and performance optimization.
-  tags: ["professional", "react", "nodejs", "postgresql"]
-
-- name: Internal Tools Dashboard
-  logo: /images/sections/projects/accenture.png
-  role: App Engineering Analyst
-  timeline: "2023"
-  summary: Dashboard for managing internal tools with real-time data visualization and external API integration.
-  tags: ["professional", "angular", "typescript", "nodejs"]
+  repo: https://github.com/Roberto286/python_audio_splitter
+  summary: Python utility that splits an audio file into 10-second clips, with support for multiple formats and automatic output handling. A simple but concrete project focused on automation and productivity.
+  tags: ["personal", "python", "audio", "automation", "pydub"]

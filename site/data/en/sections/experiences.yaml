@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Experiences
+  name: Experience
   id: experiences
   enable: true
   weight: 2  # Right after About
@@ -12,75 +12,42 @@ section:
 experiences:
 - company:
     name: Accenture
-    url: "https://www.accenture.com/"
-    location: Milan, Italy
     logo: /images/sections/company/accenture.svg
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/company/accenture-dark.png
-    overview: Global leader in professional services with leading capabilities in digital, cloud, and security.
+    location: Rome, Italy (Hybrid)
   positions:
-  - designation: Advanced App Engineering Analyst
-    start: May 2024
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
+  - designation: Custom Software Engineering Analyst
+    start: July 2024
     responsibilities:
-    - Develop and maintain enterprise applications with modern and scalable architectures
-    - Design and implement RESTful APIs with Node.js, NestJS, and TypeScript
-    - Build frontend applications with React and Angular for mission-critical systems
-    - Optimize performance and refactor legacy code
-    - Collaborate in Agile teams with Scrum methodologies and CI/CD
-    - Code review and mentoring of junior developers
+    - Design and development of a Backend-for-Frontend architecture for an internal application
+    - Development and maintenance of the backend with NestJS and MongoDB
+    - Collaboration with the frontend team on SvelteKit development, combining technical support and direct code contributions
 
-- company:
-    name: Accenture
-    url: "https://www.accenture.com/"
-    location: Milan, Italy
-    logo: /images/sections/company/accenture.svg
-    overview: Global leader in professional services with leading capabilities in digital, cloud, and security.
-  positions:
-  - designation: App Engineering Associate
-    start: September 2023
-    end: April 2024
+  - designation: Custom Software Engineering Analyst
+    start: January 2024
     responsibilities:
-    - Develop microservices with Node.js and NestJS
-    - Integrate MongoDB and PostgreSQL databases
-    - Implement complex business logic and architectural patterns
-    - Automated testing (unit, integration, e2e) with Jest and Cypress
-    - Manage deployments with Docker and CI/CD pipelines
-    - Active participation in code reviews and pair programming
+    - Development and maintenance of a CRM for a leading postal and logistics services company
+    - Product evolution with Angular 15, RxJS, and NgRx, across bug fixing and new features
+    - Technical lead role for a team of 6 developers, while staying close to the code
 
-- company:
-    name: Accenture
-    url: "https://www.accenture.com/"
-    location: Milan, Italy
-    logo: /images/sections/company/accenture.svg
-    overview: Global leader in professional services with leading capabilities in digital, cloud, and security.
-  positions:
-  - designation: App Engineering Analyst
-    start: May 2023
-    end: August 2023
+  - designation: Application Development Associate
+    start: February 2023
+    end: January 2024
     responsibilities:
-    - Develop frontend components with React and TypeScript
-    - Implement responsive and accessible UI following best practices
-    - Integrate with backend APIs and manage state with Redux
-    - Debug and resolve bugs in production environments
-    - Technical documentation and knowledge sharing with the team
-    - Participate in daily standups and sprint planning
+    - Development of an onboarding platform for a public sector organization based on microservices and microfrontends
+    - Delivery of frontend and backend components with React, Redux, Node.js, Express.js, and PostgreSQL
+    - Contribution to performance and scalability improvements through targeted optimizations
 
-- company:
-    name: Accenture
-    url: "https://www.accenture.com/"
-    location: Milan, Italy
-    logo: /images/sections/company/accenture.svg
-    overview: Global leader in professional services with leading capabilities in digital, cloud, and security.
-  positions:
-  - designation: Junior Software Engineer
+  - designation: Application Development Associate
+    start: October 2022
+    end: February 2023
+    responsibilities:
+    - Refactoring of an internal application for a telecommunications operator
+    - Frontend stack upgrade with React, TypeScript, SCSS, and Bootstrap
+    - Direct contribution to the modernization of both the codebase and the application
+
+  - designation: Internship
     start: May 2022
-    end: April 2023
+    end: October 2022
     responsibilities:
-    - Onboarding on enterprise technologies (Node.js, React, Angular)
-    - Develop features under supervision of senior developers
-    - Bug fixing and application maintenance support
-    - Learn software development best practices
-    - Participate in training sessions and technical workshops
-    - Contribute to internal projects with quality code
+    - Frontend development of a web application with React
+    - First hands-on experience in web development, with attention to clean and efficient code

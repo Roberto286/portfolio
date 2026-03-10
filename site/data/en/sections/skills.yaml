@@ -3,7 +3,7 @@ section:
   name: Skills
   id: skills
   enable: true
-  weight: 3  # After Experiences, before Projects
+  weight: 3  # After Experience, before Projects
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -16,68 +16,72 @@ skills:
 # Frontend Skills
 - name: JavaScript
   logo: /images/sections/skills/javascript.svg
-  summary: "Primary language for frontend and backend development with expertise in ES6+ and async programming."
+  summary: "A core language of the modern web, useful for building frontend and backend with speed and continuity."
   url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 
 - name: TypeScript
   logo: /images/sections/skills/typescript.svg
-  summary: "Type-safe development with TypeScript for scalable and maintainable enterprise applications."
+  summary: "Adds structure to JavaScript and makes code more reliable, clear, and maintainable."
   url: "https://www.typescriptlang.org/"
 
 - name: React
   logo: /images/sections/skills/react.svg
-  summary: "Building modern and performant UIs with hooks, context API, and state management."
+  summary: "An ideal library for dynamic interfaces and reusable components, helping keep products organized and easier to evolve."
   url: "https://react.dev/"
 
 - name: Angular
   logo: /images/sections/skills/angular.svg
-  summary: "Developing enterprise applications with Angular, RxJS, and dependency injection."
+  summary: "A solid framework for complex applications, especially in enterprise contexts where structure and scalability truly matter."
   url: "https://angular.io/"
 
 - name: HTML5
   logo: /images/sections/skills/html5.svg
-  summary: "Semantic and accessible markup for modern web applications."
+  summary: "The foundation of every web interface, essential for semantic, accessible, and well-structured pages."
   url: "https://developer.mozilla.org/en-US/docs/Web/HTML"
 
 - name: CSS3
   logo: /images/sections/skills/css3.svg
-  summary: "Responsive styling with CSS3, Flexbox, Grid, and SCSS preprocessors."
+  summary: "Defines the visual layer of a product, with responsive layouts and a consistent experience across devices."
   url: "https://developer.mozilla.org/en-US/docs/Web/CSS"
 
 # Backend Skills
 - name: Node.js
   logo: /images/sections/skills/nodedotjs.svg
-  summary: "JavaScript runtime for scalable and performant backend development."
+  summary: "A modern backend environment that makes it possible to build services and APIs quickly and at scale."
   url: "https://nodejs.org/"
 
 - name: NestJS
   logo: /images/sections/skills/nestjs.svg
-  summary: "Enterprise framework for building efficient and scalable server-side applications."
+  summary: "A structured Node.js framework, useful for modular and maintainable backends designed to grow over time."
   url: "https://nestjs.com/"
 
 - name: Express
   logo: /images/sections/skills/express.svg
-  summary: "Minimalist framework for REST APIs and Node.js web applications."
+  summary: "A lightweight framework for APIs and web services, effective when simplicity and flexibility are needed."
   url: "https://expressjs.com/"
 
 # Database Skills
 - name: MongoDB
   logo: /images/sections/skills/mongodb.svg
-  summary: "NoSQL database for modern applications with aggregation framework and replica sets."
+  summary: "A NoSQL database suited to flexible data and modern applications, useful when speed and adaptability matter."
   url: "https://www.mongodb.com/"
 
 - name: PostgreSQL
   logo: /images/sections/skills/postgresql.svg
-  summary: "Advanced relational database with JSON support and complex queries."
+  summary: "A reliable and mature relational database, ideal when robustness, data consistency, and advanced queries matter."
   url: "https://www.postgresql.org/"
 
 # Tools & DevOps
 - name: Git
   logo: /images/sections/skills/git.svg
-  summary: "Version control with Git, GitHub, and collaborative workflows."
+  summary: "The standard for version control, essential for working in teams with order and traceability."
   url: "https://git-scm.com/"
 
 - name: Docker
   logo: /images/sections/skills/docker.svg
-  summary: "Application containerization for consistent and scalable deployments."
+  summary: "Containerization makes environments and releases more consistent, reducing friction between development and production."
   url: "https://www.docker.com/"
+
+- name: AI
+  logo: /images/sections/skills/ai.svg
+  summary: "AI tools like OpenCode accelerate analysis, iteration, and prototyping, increasing both productivity and quality of work."
