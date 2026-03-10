@@ -5,3 +5,5 @@ node_modules/
 resources/
 public/
 .hugo_build.lock
+.vercel
+.env*.local
