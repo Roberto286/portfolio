@@ -101,8 +101,11 @@ other = "Per favore attiva JavaScript per vedere il"
 [read]
 other = "Leggi"
 
-# [project_star]
-# other = "Star"
+[project_star]
+other = "Star"
+
+[project_demo]
+other = "Demo"
 
 [project_details]
 other = "Dettagli"
