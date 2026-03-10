@@ -1,10 +1,10 @@
 {
-  "build": {
-    "env": {
-      "HUGO_VERSION": "0.157.0"
-    }
-  },
-  "buildCommand": "hugo --gc --minify",
-  "installCommand": "hugo mod tidy && hugo mod npm pack && npm install",
-  "outputDirectory": "public"
+	"build": {
+		"env": {
+			"HUGO_VERSION": "0.157.0"
+		}
+	},
+	"installCommand": "cd site && hugo mod tidy && hugo mod npm pack && npm install",
+	"buildCommand": "hugo --source /site --gc --minify",
+	"outputDirectory": "public"
 }
