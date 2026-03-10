@@ -16,68 +16,72 @@ skills:
 # Frontend Skills
 - name: JavaScript
   logo: /images/sections/skills/javascript.svg
-  summary: "Linguaggio principale per sviluppo frontend e backend con esperienza in ES6+ e async programming."
+  summary: "Linguaggio centrale del web moderno, utile per sviluppare frontend e backend con continuita' e rapidita'."
   url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 
 - name: TypeScript
   logo: /images/sections/skills/typescript.svg
-  summary: "Sviluppo type-safe con TypeScript per applicazioni enterprise scalabili e manutenibili."
+  summary: "Aggiunge struttura a JavaScript e rende il codice piu' affidabile, chiaro e manutenibile."
   url: "https://www.typescriptlang.org/"
 
 - name: React
   logo: /images/sections/skills/react.svg
-  summary: "Creazione di UI moderne e performanti con hooks, context API e state management."
+  summary: "Libreria ideale per interfacce dinamiche e componenti riusabili, utile per prodotti ordinati e veloci da evolvere."
   url: "https://react.dev/"
 
 - name: Angular
   logo: /images/sections/skills/angular.svg
-  summary: "Sviluppo di applicazioni enterprise con Angular, RxJS e dependency injection."
+  summary: "Framework solido per applicazioni complesse, adatto a contesti enterprise dove struttura e scalabilita' contano davvero."
   url: "https://angular.io/"
 
 - name: HTML5
   logo: /images/sections/skills/html5.svg
-  summary: "Markup semantico e accessibile per applicazioni web moderne."
+  summary: "Fondamenta di ogni interfaccia web, importante per pagine semantiche, accessibili e ben organizzate."
   url: "https://developer.mozilla.org/en-US/docs/Web/HTML"
 
 - name: CSS3
   logo: /images/sections/skills/css3.svg
-  summary: "Styling responsive con CSS3, Flexbox, Grid e preprocessori SCSS."
+  summary: "Definisce il livello visivo del prodotto, con layout responsive e un'esperienza coerente su ogni dispositivo."
   url: "https://developer.mozilla.org/en-US/docs/Web/CSS"
 
 # Backend Skills
 - name: Node.js
   logo: /images/sections/skills/nodedotjs.svg
-  summary: "Runtime JavaScript per sviluppo backend scalabile e performante."
+  summary: "Ambiente backend moderno che permette di sviluppare servizi e API in modo rapido e scalabile."
   url: "https://nodejs.org/"
 
 - name: NestJS
   logo: /images/sections/skills/nestjs.svg
-  summary: "Framework enterprise per costruire applicazioni server-side efficienti e scalabili."
+  summary: "Framework Node.js strutturato, utile per backend modulari e manutenibili destinati a crescere nel tempo."
   url: "https://nestjs.com/"
 
 - name: Express
   logo: /images/sections/skills/express.svg
-  summary: "Framework minimalista per API REST e applicazioni web Node.js."
+  summary: "Framework leggero per API e servizi web, efficace quando servono semplicita' e flessibilita'."
   url: "https://expressjs.com/"
 
 # Database Skills
 - name: MongoDB
   logo: /images/sections/skills/mongodb.svg
-  summary: "Database NoSQL per applicazioni moderne con aggregation framework e replica set."
+  summary: "Database NoSQL adatto a dati flessibili e applicazioni moderne, utile quando servono velocita' e adattabilita'."
   url: "https://www.mongodb.com/"
 
 - name: PostgreSQL
   logo: /images/sections/skills/postgresql.svg
-  summary: "Database relazionale avanzato con supporto JSON e query complesse."
+  summary: "Database relazionale affidabile e maturo, ideale quando contano robustezza, coerenza dei dati e query evolute."
   url: "https://www.postgresql.org/"
 
 # Tools & DevOps
 - name: Git
   logo: /images/sections/skills/git.svg
-  summary: "Version control con Git, GitHub e workflow collaborativi."
+  summary: "Standard per il versionamento del codice, essenziale per lavorare in team con ordine e tracciabilita'."
   url: "https://git-scm.com/"
 
 - name: Docker
   logo: /images/sections/skills/docker.svg
-  summary: "Containerizzazione di applicazioni per deployment consistenti e scalabili."
+  summary: "La containerizzazione rende ambienti e rilasci piu' coerenti, riducendo attriti tra sviluppo e produzione."
   url: "https://www.docker.com/"
+
+- name: AI nel workflow
+  icon: "fas fa-robot"
+  summary: "Strumenti AI come OpenCode accelerano analisi, iterazioni e prototipazione, aumentando produttivita' e qualita' del lavoro."

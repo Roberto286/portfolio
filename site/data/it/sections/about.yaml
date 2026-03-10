@@ -11,19 +11,25 @@ company:
   url: "https://www.accenture.com"
 
 summary: |
-  Full Stack Developer con oltre 3 anni di esperienza nello sviluppo di applicazioni web scalabili 
-  per settori bancario, telecomunicazioni e pubblica amministrazione. Attualmente Technical Lead in 
-  Accenture, dove mi occupo di progettazione e sviluppo di architetture moderne con tecnologie come 
-  React, Angular, Node.js, NestJS e MongoDB.
+  Sono un Full Stack Developer con oltre 4 anni di esperienza nello sviluppo di applicazioni web per 
+  il settore bancario, telecomunicazioni e pubblica amministrazione. In Accenture lavoro come 
+  Technical Lead su progetti costruiti con React, Angular, Node.js, NestJS e MongoDB.
   
-  Appassionato di continuous learning, contribuisco attivamente a progetti open source e mi mantengo 
-  costantemente aggiornato attraverso corsi, certificazioni e progetti personali. Credo fortemente 
-  nel valore del codice pulito, delle best practices e della collaborazione in team.
+  Mi piace creare soluzioni chiare, solide e utili, con attenzione alla qualita' del codice, agli 
+  standard di sviluppo e alle best practice. Non mi basta che qualcosa funzioni: mi interessa capire 
+  se e' davvero sostenibile nel tempo, manutenibile e costruito su basi affidabili.
+
+  Affronto ogni progetto con un approccio concreto e responsabile, cercando il giusto equilibrio tra 
+  velocita', qualita' e visione d'insieme. Continuo a formarmi tra open source, corsi, certificazioni 
+  e progetti personali, perche' nel tech crescere e migliorarsi fa parte del lavoro ogni giorno.
+
+  Se ti va di conoscermi meglio, qui sotto trovi tutti i riferimenti per contattarmi e i miei CV da 
+  visualizzare o scaricare.
 
 socialLinks:
   - name: "Email"
     icon: "fas fa-envelope"
-    url: "mailto:roberto.saliola96@gmail.com"
+    url: "roberto.saliola96@gmail.com"
     
   - name: "GitHub"
     icon: "fab fa-github"
@@ -39,14 +45,3 @@ resourceLinks:
     
   - title: "English CV"
     url: "/files/Roberto_Saliola_CV_eng.pdf"
-
-badges:
-  - type: "certification"
-    name: "MongoDB Associate Developer"
-    url: "https://learn.mongodb.com/c/9zCRJmjOREejOF--q_0hFg"
-    badge: "https://learn.mongodb.com/c/9zCRJmjOREejOF--q_0hFg"
-    
-  - type: "certification"
-    name: "MongoDB Associate Solution Architect"
-    url: "https://learn.mongodb.com/c/Ar7j63l1TbqpDxYzvEMNFA"
-    badge: "https://learn.mongodb.com/c/Ar7j63l1TbqpDxYzvEMNFA"
