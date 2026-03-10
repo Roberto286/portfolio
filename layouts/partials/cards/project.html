@@ -10,9 +10,7 @@
           {{ if ne $imageImage.MediaType.SubType "svg" }}
           {{ $imageImage = $imageImage.Fit "500x500" }}
           {{ end }}
-          <img class="card-img-top" src="{{ $imageImage.RelPermalink }}" alt="{{ .name }}" loading="lazy" {{ if ne
-            $imageImage.MediaType.SubType "svg" }}width="{{ $imageImage.Width }}" height="{{ $imageImage.Height }}" {{
-            end }} />
+          <img class="card-img-top" src="{{ $imageImage.RelPermalink }}" alt="{{ .name }}" loading="lazy" {{ if ne $imageImage.MediaType.SubType "svg" }}width="{{ $imageImage.Width }}" height="{{ $imageImage.Height }}"{{ end }} />
           {{ end }}
         </div>
         {{ end }}
@@ -33,9 +31,7 @@
               {{ if ne $logoImage.MediaType.SubType "svg" }}
               {{ $logoImage = $logoImage.Fit "24x24" }}
               {{ end }}
-              <img class="card-img-xs" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" {{ if ne
-                $logoImage.MediaType.SubType "svg" }}width="{{ $logoImage.Width }}" height="{{ $logoImage.Height }}" {{
-                end }} />
+              <img class="card-img-xs" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" {{ if ne $logoImage.MediaType.SubType "svg" }}width="{{ $logoImage.Width }}" height="{{ $logoImage.Height }}"{{ end }} />
               {{ end }}
               {{ end }}
 
