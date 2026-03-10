@@ -3,5 +3,8 @@
     "env": {
       "HUGO_VERSION": "0.157.0"
     }
-  }
+  },
+  "buildCommand": "hugo --gc --minify",
+  "installCommand": "hugo mod tidy && hugo mod npm pack && npm install",
+  "outputDirectory": "public"
 }
