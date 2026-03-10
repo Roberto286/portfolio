@@ -5,6 +5,6 @@
 		}
 	},
 	"installCommand": "cd site && hugo mod tidy && hugo mod npm pack && npm install",
-	"buildCommand": "hugo --source /site --gc --minify",
-	"outputDirectory": "public"
+	"buildCommand": "cd site && hugo --gc --minify --cleanDestinationDir",
+	"outputDirectory": "site/public"
 }
