@@ -82,6 +82,6 @@ skills:
   summary: "La containerizzazione rende ambienti e rilasci piu' coerenti, riducendo attriti tra sviluppo e produzione."
   url: "https://www.docker.com/"
 
-- name: AI nel workflow
-  icon: "fas fa-robot"
+- name: AI
+  logo: /images/sections/skills/ai.svg
   summary: "Strumenti AI come OpenCode accelerano analisi, iterazioni e prototipazione, aumentando produttivita' e qualita' del lavoro."
