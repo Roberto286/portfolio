@@ -3,45 +3,45 @@ section:
   name: Progetti
   id: projects
   enable: true
-  weight: 4  # Dopo Competenze, prima di Formazione
+  weight: 4 # Dopo Competenze, prima di Formazione
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
 
 # your projects
 projects:
-- name: Zero Dep API
-  role: Creator & Maintainer
-  timeline: "2024"
-  repo: https://github.com/Roberto286/zero-dep-api
-  summary: REST API in Node.js costruita senza dipendenze esterne, con routing essenziale e supporto ai principali metodi HTTP. Un progetto focalizzato su leggerezza, chiarezza e controllo del runtime nativo.
-  tags: ["personal", "javascript", "nodejs", "rest-api", "framework"]
+  - name: Zero Dep API
+    role: Creator & Maintainer
+    timeline: '2024'
+    repo: https://github.com/Roberto286/zero-dep-api
+    summary: REST API in Node.js costruita senza dipendenze esterne, con routing essenziale e supporto ai principali metodi HTTP. Un progetto focalizzato su leggerezza, chiarezza e controllo del runtime nativo.
+    tags: ['personal', 'javascript', 'nodejs', 'rest-api', 'framework']
 
-- name: Reservation App
-  role: Full Stack Developer
-  timeline: "2025 - 2026"
-  repo: https://github.com/Roberto286/reservation-app
-  summary: Sistema di prenotazione eventi con autenticazione multi-ruolo, gestione eventi e disponibilita' in tempo reale. Un monorepo full stack che unisce Angular, NestJS e MongoDB in un'unica base di progetto.
-  tags: ["personal", "typescript", "angular", "nestjs", "mongodb"]
-  url: https://reservations-app.sda.pp.ua/
+  - name: Reservation App
+    role: Full Stack Developer
+    timeline: '2025 - 2026'
+    repo: https://github.com/Roberto286/reservation-app
+    summary: Sistema di prenotazione eventi con autenticazione multi-ruolo, gestione eventi e disponibilita' in tempo reale. Un monorepo full stack che unisce Angular, NestJS e MongoDB in un'unica base di progetto.
+    tags: ['personal', 'typescript', 'angular', 'nestjs', 'mongodb']
+    url: https://reservations-app.sda.pp.ua/
 
-- name: AI Agent
-  role: Creator
-  timeline: "2026"
-  repo: https://github.com/Roberto286/ai-agent
-  summary: Agente CLI in Python integrato con Gemini 2.5 Flash, pensato per gestire prompt da terminale e monitorare l'utilizzo dei token. Un progetto utile per esplorare workflow AI semplici, pratici e concreti.
-  tags: ["personal", "python", "ai", "gemini", "cli"]
+  - name: AI Agent
+    role: Creator
+    timeline: '2026'
+    repo: https://github.com/Roberto286/ai-agent
+    summary: Agente AI in Python integrato con Gemini 2.5 Flash, progettato per leggere, scrivere ed eseguire file, esplorare directory e interagire con il filesystem in modo conversazionale. Un progetto didattico pensato per sperimentare workflow AI semplici, pratici e concreti.
+    tags: ['personal', 'python', 'ai', 'gemini', 'cli']
 
-- name: Paladins Wheelspin
-  role: Full Stack Developer
-  timeline: "2024"
-  repo: https://github.com/Roberto286/paladins_wheelspin
-  summary: Progetto full stack organizzato in monorepo, con frontend React e TypeScript e backend Express su SQLite. Una base pratica per coordinare interfaccia, API e persistenza dati nello stesso flusso di sviluppo.
-  tags: ["personal", "typescript", "react", "express", "sqlite"]
+  - name: Paladins Wheelspin
+    role: Full Stack Developer
+    timeline: '2024'
+    repo: https://github.com/Roberto286/paladins_wheelspin
+    summary: Progetto full stack organizzato in monorepo, con frontend React e TypeScript e backend Express su SQLite. Una base pratica per coordinare interfaccia, API e persistenza dati nello stesso flusso di sviluppo.
+    tags: ['personal', 'typescript', 'react', 'express', 'sqlite']
 
-- name: Python Audio Splitter
-  role: Creator
-  timeline: "2023"
-  repo: https://github.com/Roberto286/python_audio_splitter
-  summary: Utility Python che divide un file audio in clip da 10 secondi, con supporto a piu' formati e gestione automatica dell'output. Un progetto semplice ma concreto, orientato ad automazione e produttivita'.
-  tags: ["personal", "python", "audio", "automation", "pydub"]
+  - name: Python Audio Splitter
+    role: Creator
+    timeline: '2023'
+    repo: https://github.com/Roberto286/python_audio_splitter
+    summary: Utility Python che divide un file audio in clip da 10 secondi, con supporto a piu' formati e gestione automatica dell'output. Un progetto semplice ma concreto, orientato ad automazione e produttivita'.
+    tags: ['personal', 'python', 'audio', 'automation', 'pydub']
