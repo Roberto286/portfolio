@@ -1,0 +1,15 @@
+{{- $gitRepo := site.Params.GitRepo -}}
+{{- $gitBranch := site.Params.GitBranch -}}
+{{- if not $gitBranch -}}
+{{- $gitBranch = "main" -}}
+{{- end -}}
+{{- $filePath := .File.Path -}}
+{{- $gitForge := site.Params.GitForge -}}
+
+{{- if eq $gitForge "gitlab" -}}
+{{- printf "%s/-/edit/%s/site/content/%s" $gitRepo $gitBranch $filePath -}}
+{{- else if eq $gitForge "gitea" -}}
+{{- printf "%s/_edit/%s/site/content/%s" $gitRepo $gitBranch $filePath -}}
+{{- else -}}
+{{- printf "%s/edit/%s/site/content/%s" $gitRepo $gitBranch $filePath -}}
+{{- end -}}
