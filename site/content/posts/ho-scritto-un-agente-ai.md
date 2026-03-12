@@ -1,6 +1,7 @@
 ---
-title: "AI Agent: capire l'AI scrivendola"
+title: "Ho scritto un agente AI!"
 date: 2026-03-12
+hero: images/posts-heros/ai-agent.png
 ---
 
 Viviamo ormai circondati dall'AI. La troviamo ovunque: nel browser, nel
