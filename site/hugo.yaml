@@ -2,7 +2,7 @@
 baseURL: https://robertosaliola.dev
 
 languageCode: it
-title: "Roberto Saliola"
+title: "Roberto Saliola | Full Stack Dev"
 
 # Use Hugo modules to add theme
 module:
@@ -24,12 +24,12 @@ languages:
   it:
     languageCode: it
     languageName: Italiano
-    title: "Roberto Saliola"
+    title: "Roberto Saliola | Full Stack Dev"
     weight: 1
   en:
     languageCode: en
     languageName: English
-    title: "Roberto Saliola"
+    title: "Roberto Saliola | Full Stack Dev"
     weight: 2
 
 # default language for the content
