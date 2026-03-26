@@ -12,13 +12,13 @@ section:
 experiences:
 - company:
     name: Colossus Digital
-    logo: https://framerusercontent.com/assets/hDXXkhfcmsxS10VJmo5uVcSJplU.svg
+    logo: images/sections/company/colossus-digital.svg
     location: Rome, Italy (Hybrid)
   positions:
   - designation: Senior Full Stack Developer – Backend Focus
     start: March 2026
     responsibilities:
-    - Design and development of scalable, high-performance services in distributed environments
+    - Design and development of scalable, high-performance services in distributed environments in the blockchain world
     - Backend services with NestJS and MongoDB, focusing on API design, data modeling, and performance
     - Frontend development with Angular for reactive user interfaces
     - Strong emphasis on clean architecture, reliability, and maintainability
@@ -26,7 +26,7 @@ experiences:
 
 - company:
     name: Accenture
-    logo: https://framerusercontent.com/assets/hDXXkhfcmsxS10VJmo5uVcSJplU.svg
+    logo: images/sections/company/accenture.svg
     location: Rome, Italy (Hybrid)
   positions:
   - designation: Custom Software Engineering Analyst
