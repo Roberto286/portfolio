@@ -5,26 +5,28 @@ section:
   weight: 1
   showOnNavbar: true
 
-designation: "Full Stack Developer"
+designation: "Senior Full Stack Developer – Backend Focus"
 company:
-  name: "Accenture"
-  url: "https://www.accenture.com"
+  name: "Colossus Digital"
+  url: "https://www.colossus.digital/"
 
 summary: |
-  Sono un Full Stack Developer con oltre 4 anni di esperienza nello sviluppo di applicazioni web per 
-  il settore bancario, telecomunicazioni e pubblica amministrazione. In Accenture lavoro come 
-  Technical Lead su progetti costruiti con React, Angular, Node.js, NestJS e MongoDB.
-  
-  Mi piace creare soluzioni chiare, solide e utili, con attenzione alla qualita' del codice, agli 
-  standard di sviluppo e alle best practice. Non mi basta che qualcosa funzioni: mi interessa capire 
-  se e' davvero sostenibile nel tempo, manutenibile e costruito su basi affidabili.
+  Da bambino osservavo mio zio informatico smontare e rimontare i computer, affascinato da ogni singola componente. 
+  Da lì è nata la mia passione per la tecnologia, coltivata nel tempo fino a diventare il mio lavoro.
 
-  Affronto ogni progetto con un approccio concreto e responsabile, cercando il giusto equilibrio tra 
-  velocita', qualita' e visione d'insieme. Continuo a formarmi tra open source, corsi, certificazioni 
-  e progetti personali, perche' nel tech crescere e migliorarsi fa parte del lavoro ogni giorno.
+  Provengo dal mondo alberghiero, dove ho lavorato come receptionist in hotel, ma dopo il 2020 ho deciso 
+  di investire nella mia vera passione: l'informatica.
 
-  Se ti va di conoscermi meglio, qui sotto trovi tutti i riferimenti per contattarmi e i miei CV da 
-  visualizzare o scaricare.
+  Oggi, in Colossus Digital, progetto e sviluppo backend robusti e API efficienti per sistemi distribuiti ad alta disponibilità. 
+  Lavoro con NestJS, MongoDB e Angular su servizi che gestiscono migliaia di richieste concorrenti.
+
+  Clean architecture, API design e data modeling sono il mio pane quotidiano. Il codice deve essere sostenibile nel tempo, 
+  non solo funzionare oggi — questa è la mia filosofia.
+
+  Quando non scrivo codice, mi piace passeggiare nel verde con il mio cane, 
+  sperimentare in cucina (specialmente piatti vegetali) e dedicare tempo a progetti personali e sperimentazioni.
+
+  Ti va di scambiare due chiacchiere? Qui sotto trovi come raggiungermi.
 
 socialLinks:
   - name: "Email"

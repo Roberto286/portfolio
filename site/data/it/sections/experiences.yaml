@@ -11,12 +11,26 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Colossus Digital
+    logo: https://framerusercontent.com/assets/hDXXkhfcmsxS10VJmo5uVcSJplU.svg
+    location: Roma, Italia (Ibrido)
+  positions:
+  - designation: Senior Full Stack Developer – Backend Focus
+    start: Marzo 2026
+    responsibilities:
+    - Progettazione e sviluppo di servizi scalabili e ad alte prestazioni in contesti distribuiti
+    - Backend con NestJS e MongoDB, curando API design, data modeling e performance
+    - Sviluppo frontend reattivi con Angular
+    - Forte attenzione a clean architecture, affidabilità e manutenibilità
+    - "Focus su: TypeScript, NestJS, MongoDB, Redis, Angular, Node.js, Blockchain"
+- company:
     name: Accenture
     logo: /images/sections/company/accenture.svg
     location: Roma, Italia (Ibrido)
   positions:
   - designation: Custom Software Engineering Analyst
     start: Luglio 2024
+    end: Marzo 2026
     responsibilities:
     - Progettazione e sviluppo di un'architettura Backend-for-Frontend per un'applicazione interna
     - Sviluppo e manutenzione del backend con NestJS e MongoDB
@@ -24,9 +38,10 @@ experiences:
 
   - designation: Custom Software Engineering Analyst
     start: Gennaio 2024
+    end: Marzo 2026
     responsibilities:
     - Sviluppo e manutenzione di un CRM per una primaria azienda di servizi postali e logistici
-    - Evoluzione del prodotto con Angular 15, RxJS e NgRx, tra bug fixing e nuove funzionalita'
+    - Evoluzione del prodotto con Angular 15, RxJS e NgRx, tra bug fixing e nuove funzionalità
     - Ruolo di technical lead per un team di 6 sviluppatori, senza allontanarmi dal lavoro sul codice
 
   - designation: Application Development Associate
@@ -35,7 +50,7 @@ experiences:
     responsibilities:
     - Sviluppo di una piattaforma di onboarding per un ente pubblico basata su microservizi e microfrontend
     - Realizzazione di componenti frontend e backend con React, Redux, Node.js, Express.js e PostgreSQL
-    - Contributo al miglioramento di performance e scalabilita' del sistema attraverso ottimizzazioni mirate
+    - Contributo al miglioramento di performance e scalabilità del sistema attraverso ottimizzazioni mirate
 
   - designation: Application Development Associate
     start: Ottobre 2022

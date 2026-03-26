@@ -10,11 +10,18 @@ section:
 
 # your projects
 projects:
-  - name: Zero Dep API
+  - name: Asteroids
+    role: Creator
+    timeline: '2025'
+    repo: https://github.com/Roberto286/asteroids
+    summary: Implementazione del classico gioco Asteroids in Python con Pygame. Un progetto didattico che dimostra programmazione orientata agli oggetti, game loop con Pygame, sistema di sprite e rilevamento delle collisioni.
+    tags: ['personal', 'python', 'pygame', 'game', 'oop']
+
+  - name: ZSP
     role: Creator & Maintainer
     timeline: '2024'
-    repo: https://github.com/Roberto286/zero-dep-api
-    summary: REST API in Node.js costruita senza dipendenze esterne, con routing essenziale e supporto ai principali metodi HTTP. Un progetto focalizzato su leggerezza, chiarezza e controllo del runtime nativo.
+    repo: https://github.com/Roberto286/zsp
+    summary: 'Mini framework Express-like per Node.js progettato con un principio radicale: zero dipendenze esterne. Il framework implementa routing e gestione delle richieste utilizzando esclusivamente le API native di Node.js.'
     tags: ['personal', 'javascript', 'nodejs', 'rest-api', 'framework']
 
   - name: Reservation App

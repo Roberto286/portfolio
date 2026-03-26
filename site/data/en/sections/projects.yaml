@@ -10,11 +10,18 @@ section:
 
 # your projects
 projects:
-  - name: Zero Dep API
+  - name: Asteroids
+    role: Creator
+    timeline: '2025'
+    repo: https://github.com/Roberto286/asteroids
+    summary: Classic Asteroids game implemented in Python with Pygame. An educational project demonstrating object-oriented programming, Pygame game loop, sprite systems, and collision detection.
+    tags: ['personal', 'python', 'pygame', 'game', 'oop']
+
+  - name: ZSP
     role: Creator & Maintainer
     timeline: '2024'
-    repo: https://github.com/Roberto286/zero-dep-api
-    summary: Node.js REST API built without external dependencies, with essential routing and support for the main HTTP methods. A project focused on lightness, clarity, and control of the native runtime.
+    repo: https://github.com/Roberto286/zsp
+    summary: 'Express-like mini framework for Node.js designed with a radical principle: zero external dependencies. The framework implements routing and request handling using exclusively Node.js native APIs.'
     tags: ['personal', 'javascript', 'nodejs', 'rest-api', 'framework']
 
   - name: Reservation App
@@ -29,7 +36,7 @@ projects:
     role: Creator
     timeline: '2026'
     repo: https://github.com/Roberto286/ai-agent
-    summary: AI agent in Python integrated with Gemini 2.5 Flash, designed to read, write, and execute files, explore directories, and interact with the filesystem conversationally. A didactic project aimed at experimenting with
+    summary: AI agent in Python integrated with Gemini 2.5 Flash, designed to read, write, and execute files, explore directories, and interact with the filesystem conversationally. A didactic project aimed at experimenting with simple, practical, and concrete AI workflows.
     tags: ['personal', 'python', 'ai', 'gemini', 'cli']
 
   - name: Paladins Wheelspin

@@ -5,28 +5,29 @@ section:
   weight: 1
   showOnNavbar: true
 
-designation: "Full Stack Developer"
+designation: "Senior Full Stack Developer – Backend Focus"
 company:
-  name: "Accenture"
-  url: "https://www.accenture.com"
+  name: "Colossus Digital"
+  url: "https://www.colossus.digital/"
 
 summary: |
-  I'm a Full Stack Developer with over 4 years of experience building web applications for the 
-  banking, telecommunications, and public sector. At Accenture, I work as a Technical Lead on 
-  projects built with React, Angular, Node.js, NestJS, and MongoDB.
+  As a child, I used to watch my uncle, a computer technician, disassemble and reassemble computers, 
+  fascinated by every single component. That's where my passion for technology began, 
+  growing over time until it became my profession.
 
-  I like building solutions that are clear, solid, and useful, with strong attention to code 
-  quality, development standards, and best practices. It's not enough for me that something just 
-  works: I want to understand whether it's truly sustainable over time, maintainable, and built on 
-  reliable foundations.
+  I come from the hospitality industry, where I worked as a hotel receptionist, but after 2020 
+  I decided to invest in my true passion: technology.
 
-  I approach every project with a practical and responsible mindset, always looking for the right 
-  balance between speed, quality, and the bigger picture. I keep learning through open source, 
-  courses, certifications, and personal projects, because in tech, growth and improvement are part 
-  of the job every single day.
+  Today, at Colossus Digital, I design and develop robust backends and efficient APIs for high-availability distributed systems. 
+  I work with NestJS, MongoDB, Redis, and Angular on services handling thousands of concurrent requests.
 
-  If you'd like to get to know me better, below you'll find all the ways to contact me and my CVs 
-  to view or download.
+  Clean architecture, API design, and data modeling are my daily bread. Code must be sustainable over time, 
+  not just work today — that's my philosophy.
+
+  When I'm not writing code, I enjoy walking in the countryside with my dog, experimenting in the kitchen 
+  (especially vegetarian dishes), and dedicating time to personal projects and experiments.
+
+  I'd love to connect. Reach out below!
 
 socialLinks:
   - name: "Email"
