@@ -24,12 +24,12 @@ languages:
   it:
     languageCode: it
     languageName: Italiano
-    title: "Roberto Saliola | Full Stack Dev"
+    title: "Roberto Saliola" 
     weight: 1
   en:
     languageCode: en
     languageName: English
-    title: "Roberto Saliola | Full Stack Dev"
+    title: "Roberto Saliola"
     weight: 2
 
 # default language for the content
