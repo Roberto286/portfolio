@@ -6,7 +6,8 @@ hero: images/posts-heros/zsp.png
 
 Chi sviluppa con Javascript/Typescript lo sa bene. Ogni progetto, anche un
 singolo [ḧello world](https://it.wikipedia.org/wiki/Hello_world), richiede
-decine (facciamo anche migliaia) di dipendenze.  
+decine (facciamo anche migliaia) di dipendenze.
+
 É un meccanismo ormai talmente radicato che non ci facciamo piú caso.
 
 1. git clone
@@ -20,11 +21,11 @@ abbandonerai dopo 1 settimana.
 
 Ci siamo passati tutti, me compreso. Un giorno, peró, voglioso di testare la mia
 conoscenza di Javascript, attratto dalle sempre piú numerose feature giá
-built-in di Node  
+built-in di Node
 mi sono chiesto: sarebbe possibile creare un framework backend simile ad
 [Express](https://expressjs.com/) con ZERO dipendenze?
 
-La risposta sembra essere si e ció ha dato vita a [ZSP](https://www.npmjs.com/package/@roberto286/zsp>).
+La risposta sembra essere si e ció ha dato vita a [ZSP](https://www.npmjs.com/package/@roberto286/zsp).
 
 Come citato nel [README](https://github.com/Roberto286/zsp/blob/main/README.md)
 ZSP sta per `zero spaccato` per rimarcare il concetto che questa libreria non ha
@@ -46,6 +47,7 @@ Javascript sul backend.
 Per farlo ho costruito una classe che estendesse la classe
 [Server](https://nodejs.org/api/http.html#class-httpserver) del modulo http di
 Node.
+
 Avevo bisogno di:
 
 1. Un sistema che mi permettesse a runtime di registrare le rotte definite dall'utente
@@ -151,7 +153,7 @@ app.post('/users', async (req, res) => {
 });
 
 // POST con validazione schema
-app.post('/register', 
+app.post('/register',
   {
     username: Types.String,
     password: Types.String,
