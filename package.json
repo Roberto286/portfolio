@@ -1,12 +1,10 @@
 {
+  "type": "module",
   "author": "Emruz Hossain",
   "bugs": {
     "url": "https://github.com/hugo-toha/toha/issues"
   },
   "comments": {
-"dependencies": {
-    "@vercel/og": "^0.11.1"
-  },
     "devDependencies": {
       "@fontsource/mulish": "project",
       "@fortawesome/fontawesome-free": "project",
@@ -33,7 +31,9 @@
       "typeit": "project"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "@vercel/og": "^0.11.1"
+  },
   "description": "A [Hugo](https://gohugo.io/) theme for a personal portfolio with minimalist design and responsiveness.",
   "devDependencies": {
     "@fontsource/mulish": "4.5.13",
