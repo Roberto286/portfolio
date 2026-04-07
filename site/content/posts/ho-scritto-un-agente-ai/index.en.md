@@ -1,6 +1,7 @@
 ---
 date: 2026-03-12
-hero: images/posts-heros/ai-agent.png
+images:
+  - hero.png
 title: I wrote an AI agent!
 ---
 

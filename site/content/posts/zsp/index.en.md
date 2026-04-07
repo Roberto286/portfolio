@@ -1,7 +1,8 @@
 ---
 title: "ZSP: A Zero-Dependency Node.js Framework"
 date: 2026-04-04
-hero: images/posts-heros/zsp.png
+images:
+  - hero.png
 description: "How much can you do with Node.js without external dependencies? I created ZSP, a backend framework that relies solely on the native http module, and discovered that maybe we're depending too much on other people's code."
 ---
 
