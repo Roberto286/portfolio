@@ -9,7 +9,11 @@ default (index site.Data site.Language.Lang).site.description }}
 <meta property="og:type" content="{{ $type }}" />
 <meta property="og:description" content="{{ $description }}" />
 {{- with .Params.hero -}}
-  <meta property="og:image" content="{{ . | absURL }}">
+  {{- $heroImage := . -}}
+  {{- if not (hasPrefix . "/") -}}
+    {{- $heroImage = printf "/%s" . -}}
+  {{- end -}}
+  <meta property="og:image" content="{{ $heroImage | absURL }}">
 {{- else -}}
   {{- with .Params.images -}}
     <meta property="og:image" content="{{ index . 0 | absURL }}">
