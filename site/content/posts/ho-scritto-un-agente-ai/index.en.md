@@ -1,7 +1,5 @@
 ---
 date: 2026-03-12
-images:
-  - hero.png
 title: I wrote an AI agent!
 ---
 

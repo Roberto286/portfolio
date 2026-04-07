@@ -1,8 +1,6 @@
 ---
 title: "Ho scritto un agente AI!"
 date: 2026-03-12
-images:
-  - hero.png
 ---
 
 Viviamo ormai circondati dall'AI. La troviamo ovunque: nel browser, nel
