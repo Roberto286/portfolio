@@ -1,104 +1,87 @@
 ---
-title: "ZSP"
+title: "ZSP: Un Framework Node.js con Zero Dipendenze"
 date: 2026-04-04
 hero: images/posts-heros/zsp.png
+description: "Quanto puoi fare con Node.js senza dipendenze esterne? Ho creato ZSP, un framework backend che si appoggia solo sul modulo http nativo, e ho scoperto che forse stiamo dipendendo troppo da codice altrui."
 ---
 
-Chi sviluppa con Javascript/Typescript lo sa bene. Ogni progetto, anche un
-singolo [ḧello world](https://it.wikipedia.org/wiki/Hello_world), richiede
-decine (facciamo anche migliaia) di dipendenze.
+Immagina di creare un'API REST completa, con routing, body parsing e validazione, installando una sola libreria:
 
-É un meccanismo ormai talmente radicato che non ci facciamo piú caso.
-
-1. git clone
-2. npm i
-
-Ed ecco che centinaia di megabyte vengono scaricati sulla tua macchina. Migliaia
-di righe di codice a te sconosciuto (opensource, per caritá, ma chi di noi si é
-mai letto il codice di un axios/express/[inserire qui qualsiali libreria js]?)
-e, aggiungo io, spesso superfluo, solo per scrivere l'ennesimo side project che
-abbandonerai dopo 1 settimana.
-
-Ci siamo passati tutti, me compreso. Un giorno, peró, voglioso di testare la mia
-conoscenza di Javascript, attratto dalle sempre piú numerose feature giá
-built-in di Node
-mi sono chiesto: sarebbe possibile creare un framework backend simile ad
-[Express](https://expressjs.com/) con ZERO dipendenze?
-
-La risposta sembra essere si e ció ha dato vita a [ZSP](https://www.npmjs.com/package/@roberto286/zsp).
-
-Come citato nel [README](https://github.com/Roberto286/zsp/blob/main/README.md)
-ZSP sta per `zero spaccato` per rimarcare il concetto che questa libreria non ha
-bisogno di dipendenze esterne per funzionare
-
----
-
-ATTENZIONE: ZSP vuole essere una provocazione, un esercizio di stile. **NON** é
-e **NON** sará mai intesa per l'utilizzo in produzione
-
----
-
-## Cosa offre ZSP?
-
-Come detto precedentemente, l'obiettivo era quello di offrire una API molto
-simile a quella di Express. In modo da essere familiare a chi ha giá usato
-Javascript sul backend.
-
-Per farlo ho costruito una classe che estendesse la classe
-[Server](https://nodejs.org/api/http.html#class-httpserver) del modulo http di
-Node.
-
-Avevo bisogno di:
-
-1. Un sistema che mi permettesse a runtime di registrare le rotte definite dall'utente
-2. Un metodo che intercettasse le richieste in entrata e le smistasse verso il giusto handler
-3. Un parser per i body JSON senza dipendenze esterne come `body-parser`
-4. Un sistema di validazione degli input integrato
-5. La gestione dei parametri dinamici nelle URL (quella bella sintassi `/users/:id` che tanto ci piace)
-
-Tutto questo, ricordiamolo, **senza installare nulla**. Solo Node.js e il suo modulo `http` nativo.
-
-## Come funziona?
-
-L'architettura di ZSP è sorprendentemente semplice, ed è proprio questo il bello. La classe principale estende `http.Server` di Node.js e aggiunge un sottile strato di astrazione che ti fa dimenticare di stare lavorando con il modulo http grezzo.
-
-### Il Router: cuore pulsante del sistema
-
-Il router utilizza una `Map` per memorizzare le rotte come coppie chiave-valore nel formato `method:path`. La magia sta nel modo in cui gestisce i parametri dinamici:
-
-```javascript
-// Quando registri una rotta come /users/:id
-// ZSP la converte in una regex: ^users/([^/]+)$
-// Estrae automaticamente il parametro dalla URL
+```bash
+npm i @roberto286/zsp
 ```
 
-Questo approccio è elegante perché non richiede librerie esterne per il routing. Una semplice espressione regolare fa tutto il lavoro sporco, e l'overhead è praticamente nullo.
+E basta. Nessuna altra dipendenza. Nessun `node_modules` gonfio di centinaia di megabyte. Solo quello che hai appena installato.
 
-### Il Body Parser: leggere lo stream
+Suona come una provocazione? Esattamente quello che è.
 
-Invece di appoggiarsi a `body-parser`, ZSP implementa il proprio parser che raccoglie i chunk dallo stream della richiesta e li ricostruisce:
+## La sindrome dell'npm install
 
-```javascript
-const bodyParser = (req) => {
-  return new Promise((resolve, reject) => {
-    let body = '';
-    req.on('data', chunk => body += chunk);
-    req.on('end', () => {
-      try {
-        resolve(JSON.parse(body));
-      } catch {
-        resolve(body); // fallback a stringa raw
-      }
-    });
-  });
-};
+Ogni sviluppatore JavaScript conosce il rituale:
+
+```bash
+git clone <repo>
+npm install
+# ...attendi mentre scarica mezza internet...
 ```
 
-Niente di rivoluzionario, ma funziona. E pesa zero dipendenze.
+È diventato così normale che non ci facciamo più caso. Ma fermiamoci un secondo: **quando hai verificato l'ultima volta il codice che stai eseguendo?**
 
-### Response Enhancer: la comodità di res.send()
+Quella libreria "utility" che hai installato per risparmiarti 20 righe di codice porta con sé 15 dipendenze transitive. Ognuna di quelle dipendenze è mantenuta da qualcuno che non conosci. Ogni `npm install` è un atto di fiducia collettiva su scala industriale.
 
-Una delle cose più comode di Express è poter chiamare `res.send()` senza preoccuparsi di settare headers e serializzare JSON. ZSP aggiunge questo metodo automaticamente a ogni risposta:
+E se ti dicessi che forse non ne hai bisogno?
+
+## La sfida
+
+Un giorno, voglioso di testare la mia conoscenza di JavaScript, attratto dalle sempre più numerose feature già built-in di Node e ispirato da video challenge come [questo](https://www.youtube.com/watch?v=b_WGoPaNPMY&t=65s), mi sono chiesto: sarebbe possibile creare un framework backend utile con **zero dipendenze esterne**?
+
+La risposta è sì. E così è nato [**ZSP**](https://www.npmjs.com/package/@roberto286/zsp) (Zero Spaccato): un framework backend completo che non richiede **nessuna dipendenza** oltre a se stesso. Non usa Express, non usa Fastify, non usa nulla se non il modulo `http` nativo di Node.js.
+
+>  **Disclaimer necessario**: ZSP è un esercizio di stile, una provocazione tecnica. Va installata come dipendenza, ma non ne richiede altre. Non usarla in produzione (anche se tecnicamente funzionerebbe).
+
+## Cosa è ZSP?
+
+ZSP è un framework backend minimalista che estende la classe [Server](https://nodejs.org/api/http.html#class-httpserver) del modulo nativo `http` di Node.js.
+
+L'obiettivo era creare qualcosa di pratico usando solo quello che Node.js offre out-of-the-box: gestire il routing con espressioni regolari, parsare i body JSON leggendo direttamente gli stream, gestire parametri dinamici nelle URL (`/users/:id`), validare input. Tutto senza importare nulla dal registry npm.
+
+Per chi ha già usato Express, l'API risulterà familiare. Ma l'implementazione è completamente diversa: ogni feature è costruita da zero usando solo le API native di Node.
+
+## Cosa significa "zero dipendenze"?
+
+Nel mondo JavaScript, "zero dipendenze" è quasi un ossimoro. La maggior parte delle librerie porta con sé un albero di dipendenze transitive che esplode rapidamente.
+
+ZSP funziona diversamente: una volta installata, non scarica null'altro. Zero dipendenze transitive. Zero sub-dependency. Solo il codice che hai scelto di installare.
+
+Tutto si basa sul solo modulo `http` di Node.js. Nessun altro pacchetto. Nessun `node_modules` gonfio.
+
+## L'architettura in 5 minuti
+
+### Il Router: eleganza minimale
+
+Invece di librerie esterne, ZSP usa una `Map` semplice e regex native:
+
+```javascript
+// Registri /users/:id
+// ZSP crea: /^users\/([^/]+)$/
+// Estrae automaticamente i parametri
+```
+
+Niente overhead, niente magia nera. Una regex fa tutto il lavoro.
+
+### Il Body Parser: stream nativi
+
+```javascript
+const parseBody = (req) => new Promise((resolve) => {
+  let body = '';
+  req.on('data', chunk => body += chunk);
+  req.on('end', () => resolve(JSON.parse(body)));
+});
+```
+
+Non è rivoluzionario, ma funziona. E pesa esattamente zero dipendenze.
+
+### Response helper: comodità minimalista
 
 ```javascript
 res.send(data, statusCode = 200) {
@@ -108,11 +91,11 @@ res.send(data, statusCode = 200) {
 }
 ```
 
-Piccola, utile, essenziale.
+Un metodo semplice per inviare risposte JSON, aggiunto direttamente all'oggetto response nativo.
 
-### Schema Validation: proteggersi dai dati sporchi
+### Schema Validation: protezione integrata
 
-ZSP include un validatore di schema minimalista ma efficace. Non è JSON Schema completo, ma controlla tipi e campi obbligatori:
+ZSP include un validatore di schema built-in. Non è JSON Schema completo, ma controlla tipi e campi obbligatori:
 
 ```javascript
 const schema = {
@@ -124,140 +107,111 @@ const schema = {
 // Se manca un campo o il tipo è sbagliato → 400 Bad Request
 ```
 
-## Vediamo del codice concreto
-
-Ecco come si usa ZSP nella pratica:
+## Vediamolo in azione
 
 ```javascript
 import { getServer, Types } from '@roberto286/zsp';
 
 const app = getServer();
-const PORT = 3000;
 
 // GET semplice
 app.get('/hello', (req, res) => {
   res.send({ message: 'Ciao dal mondo senza dipendenze!' });
 });
 
-// Parametri dinamici nella URL
+// Parametri dinamici
 app.get('/users/:id', (req, res) => {
-  // req.params.id contiene il valore estratto
   res.send({ userId: req.params.id });
 });
 
 // POST con body parsing automatico
 app.post('/users', async (req, res) => {
-  // req.body è già parsato come JSON
   const { name, email } = req.body;
   res.send({ created: true, name, email }, 201);
 });
 
-// POST con validazione schema
-app.post('/register',
-  {
-    username: Types.String,
-    password: Types.String,
-    age: Types.Number
-  },
-  async (req, res) => {
-    // Se arriviamo qui, il body è validato
-    res.send({ registered: true, user: req.body });
-  }
-);
-
-app.listen(PORT, () => {
-  console.log(`🚀 Server senza dipendenze su http://localhost:${PORT}`);
+// Con validazione schema integrata
+app.post('/register', {
+  username: Types.String,
+  password: Types.String,
+  age: Types.Number
+}, async (req, res) => {
+  // Se arrivi qui, il body è validato
+  res.send({ registered: true });
 });
+
+app.listen(3000);
 ```
 
-## La pipeline delle richieste
+Guarda il tuo `package.json`:
 
-Quando arriva una richiesta, ZSP la processa attraverso una serie di middleware interni:
+```json
+{
+  "dependencies": {
+    "@roberto286/zsp": "^1.0.0"
+  }
+}
+```
 
-1. **enhanceResponse** → aggiunge `res.send()` all'oggetto risposta
-2. **parseBody** → se c'è un body, lo legge e lo parsa come JSON
-3. **routeHandler** → trova la rotta corrispondente e la esegue
+Solo questo. Nient'altro.
 
-Se una rotta ha uno schema di validazione, questo viene controllato subito dopo il parsing del body. Se fallisce, la richiesta viene interrotta con un 400 prima ancora di arrivare al tuo handler.
+## Il problema che non vuoi vedere
 
-## HTTP Methods supportati
+Ma c'è un altro aspetto, più inquietante della dimensione di `node_modules`. Parliamo di **sicurezza**.
 
-ZSP supporta tutti i metodi HTTP essenziali, mappati direttamente sulla classe Server di Node:
+Quando fai `npm install`, stai eseguendo codice di migliaia di sconosciuti sul tuo computer. E spesso, nei tuoi ambienti di produzione.
 
-- `app.get(path, handler)`
-- `app.post(path, [schema], handler)`
-- `app.put(path, [schema], handler)`
-- `app.delete(path, handler)`
-- `app.patch(path, [schema], handler)`
+Ricordi questi incidenti?
 
-Il parametro `schema` è opzionale per tutti i metodi che possono avere un body.
+- **[left-pad](https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm)**: 11 righe di codice rimosse, migliaia di build rotte
+- **[event-stream](https://blog.npmjs.org/post/180565383195/details-about-the-event-stream-incident)**: backdoor che rubava bitcoin
+- **[colors.js](https://www.bleepingcomputer.com/news/security/dev-corrupts-npm-libs-colors-and-faker-breaking-thousands-of-apps/)**: sabotaggio che inseriva glitch infiniti
 
-## La filosofia dietro ZSP
+Non sono eccezioni. Sono sintomi di un problema strutturale: **ogni dipendenza è un potenziale vettore d'attacco.**
 
-Creare ZSP è stato un esercizio di minimalismo consapevole. Nel mondo dello sviluppo moderno abbiamo normalizzato l'idea che "più dipendenze = meglio". Ogni problema ha la sua libreria, ogni libreria ha le sue dipendenze, e prima che te ne accorga il tuo `node_modules` pesa più di un sistema operativo.
+In fintech, healthcare, settore pubblico — dov'è fondamentale la supply chain del software — continuiamo a importare codice da repository che non controlliamo, da maintainer che non conosciamo.
 
-Ma è davvero necessario?
+ZSP è una provocazione, ma anche una dimostrazione pratica: **meno codice = meno superficie d'attacco.** Zero dipendenze esterne = zero vettori dalla supply chain.
 
-Node.js è diventato incredibilmente potente negli anni. Il modulo `http` nativo è robusto, gli stream sono efficienti, le Promise sono first-class citizens. Spesso ci dimentichiamo che possiamo costruire cose funzionanti senza aggiungere strati e strati di astrazione.
+## Perché JavaScript è diverso
 
-ZSP dimostra che con un paio di centinaia di righe di codice si può avere un'esperienza di sviluppo piacevole, familiare, **senza** il carico cognitivo di migliaia di dipendenze.
+C'è una ragione storica per cui siamo arrivati a questo punto. JavaScript è nato per il browser, con una standard library intenzionalmente minimale: meno bytes da trasferire.
 
-Non sto dicendo che dovresti usare ZSP in produzione (anzi, esplicitamente **non** dovresti). Sto dicendo che forse, la prossima volta che aggiungi una dipendenza al tuo progetto, potresti chiederti: *"Ne ho davvero bisogno? Posso farcela con quello che ho già?"*
+Node.js ha ereditato questa filosofia. Ma sul server le esigenze sono diverse: file, HTTP, validazione, date complesse. E qui emerge un vuoto che Python ("batteries included") o Go (stdlib monolitica) non hanno.
 
-A volte la risposta sarà sì, e va bene così. Altre volte scoprirai che il linguaggio e la piattaforma ti danno già tutto ciò che serve.
+Node sta migliorando: `fetch` nativo in Node 18, `fs/promises`, progressi continui. Ma il gap rimane.
 
-E quella scoperta, fidati, ha un sapore speciale.
+ZSP non critica Node. Dimostra che **oggi, con le API che Node offre, possiamo fare molto di più di quanto pensiamo.**
 
----
+## La domanda che ti dovresti fare
 
-## La vulnerabilità della supply chain
+Non sto dicendo di buttare i framework esistenti e riscrivere tutto in ZSP. Sto dicendo che forse, la prossima volta che aggiungi una dipendenza, potresti chiederti:
 
-Ma c'è un altro aspetto che dovremmo considerare, e non è solo questione di megabyte scaricati o di `node_modules` ingovernabili. Parliamo di sicurezza.
+> *"Ne ho davvero bisogno? Posso farcela con quello che ho già?"*
 
-Quando esegui `npm install` in un progetto moderno, stai affidando il tuo sistema — e spesso i dati dei tuoi utenti — a migliaia di sconosciuti. Ogni dipendenza è un potenziale vettore d'attacco. Ogni maintainer, un anello della catena di cui devi fidarti ciecamente.
+A volte la risposta sarà sì, e va bene. Altre volte scoprirai che il linguaggio e la piattaforma ti danno già tutto ciò che serve.
 
-Ti ricordi l'incidente [left-pad](https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm)? Un singolo pacchetto di 11 righe rimosso da npm ha rotto migliaia di build in tutto il mondo. E quello era solo un problema di disponibilità. Pensa a casi ben più gravi: il backdoor in [event-stream](https://blog.npmjs.org/post/180565383195/details-about-the-event-stream-incident) che ha rubato bitcoin dalle applicazioni che lo utilizzavano. La [sabotaggio di colors.js](https://www.bleepingcomputer.com/news/security/dev-corrupts-npm-libs-colors-and-faker-breaking-thousands-of-apps/) che ha inserito glitch infiniti nei log di produzione.
+E quella scoperta ha un sapore speciale.
 
-Queste non sono eccezioni. Sono sintomi di un sistema malato.
+## E ZSP ora?
 
-Nel 2023, [una ricerca di Socket](https://socket.dev/blog/2023-year-in-review) ha rilevato che il 48% dei pacchetti npm contiene codice potenzialmente pericoloso. E noi installiamo queste dipendenze in sistemi che gestiscono transazioni finanziarie, dati sanitari sensibili, informazioni governative classificate. È davvero accettabile?
+Non ho piani seri per ZSP. Rimane quello che è: una provocazione, un esperimento, una risposta a una curiosità personale.
 
-In contesti critici — fintech, healthcare, settore pubblico — la supply chain del software dovrebbe essere trattata con la stessa attenzione che diamo alla sicurezza fisica. Eppure continuiamo a importare codice da repository che non controlliamo, da maintainer che non conosciamo, con licenze che non leggiamo.
+Ma se qualcuno volesse prenderlo, forkarlo, trasformarlo in qualcosa di più, ecco qualche spunto:
 
-ZSP è una provocazione, certo, ma anche una dimostrazione pratica: **meno codice significa meno superficie d'attacco**. Zero dipendenze esterne significano zero vettori di attacco provenienti dalla supply chain. È un approccio radicale, forse. Ma in un'epoca di supply chain attacks sempre più sofisticati, forse il radicale è esattamente ciò di cui abbiamo bisogno.
+- **TypeScript**: Migrare la codebase a TypeScript. Aggiungere i tipi è un ottimo esercizio per imparare a tipizzare senza dipendenze. E ora è ancora più facile: Node 22+ supporta TypeScript nativamente senza bisogno di transpiler esterni
+- **Test suite**: Scrivere una test suite da zero usando `node --test` (il test runner nativo di Node) è un ottimo modo per imparare come funzionano i runner sotto il cofano, ed è più facile che mai senza Jest o Mocha
+- **WebSocket**: Implementare un server WebSocket da zero usando solo il modulo `net` nativo è un esercizio avanzato per capire il protocollo WS, oppure creare un wrapper minimalista attorno a un'implementazione custom senza dipendenze esterne
+- **Middleware chain**: Aggiungere supporto per middleware stile Express (`app.use()`) mantenendo l'approccio zero-deps
 
-La prossima volta che installerai quella libreria "utility" da 5 dipendenze transitive per risparmiarti 10 righe di codice, chiediti: *"Sto davvero risparmiando qualcosa? O sto solo accumulando debito tecnico e rischio di sicurezza?"*
+Non è una roadmap. Solo idee per chi ha voglia di smanettare.
 
----
+## Risorse
 
-## Il problema della standard library
-
-C'è un altro elefante nella stanza che ZSP ci costringe a guardare in faccia: JavaScript, a differenza di quasi ogni altro linguaggio moderno, non ha una standard library degna di questo nome.
-
-Confrontiamo con altri ecosistemi. Python è "batteries included": dal parsing JSON alla gestione dei file, dall'HTTP alla crittografia, quasi tutto è built-in. Go ha una standard library così ricca che molti progetti di medie dimensioni non necessitano di dipendenze esterne. Rust, con il suo crate `std`, offre primitive potenti e ben documentate per la maggior parte delle operazioni comuni.
-
-E JavaScript? Abbiamo `Array.prototype.map`, sì. Ma se vuoi fare una richiesta HTTP devi installare `axios` o `node-fetch`. Se vuoi validare uno schema, servono `joi` o `zod`. Se vuoi gestire le date in modo decente, ecco `date-fns` o `moment` (anche se questo ultimo è ormai deprecato, il che ti fa capire quanto siamo instabili).
-
-Questo vuoto ha creato un ecosistema dove anche l'operazione più banale richiede un `npm install`. Siamo diventati così dipendenti dalle librerie esterne che abbiamo dimenticato che il linguaggio stesso — e la piattaforma — potrebbero offrirci molto di più.
-
-Deno ha capito questo problema. È stato costruito con un approccio "secure by default", offre strumenti built-in (formatter, linter, test runner, bundler), supporta URL imports nativi e ha un sistema di permessi granulari. Non è perfetto, e l'adozione è ancora limitata, ma la direzione è quella giusta.
-
-L'ecosistema Node.js sta lentamente riconoscendo la necessità di una standard library più ricca. Vediamo l'introduzione di [`fetch` nativo](https://nodejs.org/dist/latest-v18.x/docs/api/globals.html#fetch) in Node 18. Vediamo miglioramenti al modulo `fs/promises`. Ma il passo è lento, troppo lento per la velocità con cui evolve il nostro settore.
-
-ZSP dimostra cosa sia possibile con le API che Node.js offre oggi. Ma immagina cosa potremmo costruire se la piattaforma facesse di più. Se avessimo validazione schema built-in. Se avessiamo un router HTTP nativo performante. Se avessimo strumenti di sviluppo integrati come in Deno.
-
-Forse il futuro di JavaScript non è un `node_modules` da 2GB. Forse il futuro è un ecosistema dove la piattaforma ci dà gli strumenti essenziali, e le librerie esterne servono davvero solo per casi d'uso specializzati.
-
-ZSP è un punto di partenza, non una destinazione. Una dimostrazione che possiamo fare di meglio. Che dobbiamo fare di meglio.
-
-Perché alla fine, la vera domanda non è "quante dipendenze posso evitare?". La vera domanda è: *"Perché il nostro ecosistema ci costringe a farne così tante in primo luogo?"*
+-  [ZSP su npm](https://www.npmjs.com/package/@roberto286/zsp)
+-  [Codice sorgente su GitHub](https://github.com/Roberto286/zsp)
+-  [README con esempi](https://github.com/Roberto286/zsp/blob/main/README.md)
 
 ---
 
-## Conclusione
-
-ZSP è una dimostrazione pratica che **zero dipendenze** non significa **zero funzionalità**. È un framework backend completo, anche se minimalista, che offre routing, parsing, validazione e una API familiare.
-
-Se ti va di darci un'occhiata, il codice sorgente è su [GitHub](https://github.com/Roberto286/zsp) e il pacchetto è disponibile su [npm](https://www.npmjs.com/package/@roberto286/zsp).
-
-E magari, la prossima volta che avvii un side project, prova a chiederti: *"Quanto può essere semplice davvero?"*
+*Quanto può essere semplice davvero il tuo prossimo side project?*
