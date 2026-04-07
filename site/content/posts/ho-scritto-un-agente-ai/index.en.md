@@ -1,6 +1,8 @@
 ---
 date: 2026-03-12
 title: I wrote an AI agent!
+images:
+  - hero.png
 ---
 
 We now live surrounded by AI. We find it everywhere: in the browser, on

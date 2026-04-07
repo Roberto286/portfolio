@@ -2,6 +2,8 @@
 title: "ZSP: Un Framework Node.js con Zero Dipendenze"
 date: 2026-04-04
 description: "Quanto puoi fare con Node.js senza dipendenze esterne? Ho creato ZSP, un framework backend che si appoggia solo sul modulo http nativo, e ho scoperto che forse stiamo dipendendo troppo da codice altrui."
+images:
+  - hero.png
 ---
 
 Immagina di creare un'API REST completa, con routing, body parsing e validazione, installando una sola libreria:
